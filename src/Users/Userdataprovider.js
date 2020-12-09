@@ -7,13 +7,13 @@ export const Userprovider = (props) =>{
 
 
 const getUsers = () =>{
-    return fetch ("")
+    return fetch ("http://localhost:8088/user")
     .then(res => res.json())
     .then(serUsers)
 }
 
 const addUsers = (parents) =>{
-    return fetch("",{
+    return fetch("http://localhost:8088/user",{
     method: "POST",
             headers: {
                 "Content-Type": "application/json"

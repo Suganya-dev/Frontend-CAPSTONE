@@ -1,8 +1,8 @@
-import logo from './logo.svg';
+
 import { Route, Redirect } from "react-router-dom"
 import './App.css';
-import { Login } from "./auth/Login"
-import { Register } from "./auth/Register"
+import { Login } from "./components/auth/Login"
+import { Register } from "./components/auth/Register"
 
 
 export const Chorepad =() =>{
