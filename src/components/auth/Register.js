@@ -12,7 +12,7 @@ export const Register = (props) => {
 
     const existingUserCheck = () => {
         // If your json-server URL is different, please change it below!
-        return fetch(`http://localhost:8088/users?email=${email.current.value}`)
+        return fetch(`http://localhost:8088/user?email=${email.current.value}`)
             .then(_ => _.json())
             .then(user => !!user.length)
     }
@@ -25,7 +25,7 @@ export const Register = (props) => {
                 .then((userExists) => {
                     if (!userExists) {
                         // If your json-server URL is different, please change it below!
-                        fetch("http://localhost:8088/users", {
+                        fetch("http://localhost:8088/user", {
                             method: "POST",
                             headers: {
                                 "Content-Type": "application/json"
@@ -40,7 +40,7 @@ export const Register = (props) => {
                             .then(createdUser => {
                                 if (createdUser.hasOwnProperty("id")) {
                                     // The user id is saved under the key app_user_id in local Storage. Change below if needed!
-                                    localStorage.setItem("app_user_id", createdUser.id)
+                                    localStorage.setItem("Kidschorepad_user", createdUser.id)
                                     props.history.push("/")
                                 }
                             })

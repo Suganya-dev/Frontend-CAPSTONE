@@ -1,25 +1,10 @@
 {
-    "user":[
-        {
-            "id":1,
-            "username":"suganya",
-            "password": "xxxxx"
-        },
-        {
-            "id":2,
-            "username":"Tarunika",
-            "password": "xxxxx",
-            "parentId": 1
-        },
-        {
-            "id":3,
-            "username":"Teresa",
-            "password": "yyyy"
-        },
-        {
-            "id":4,
-            "username":"Olivia",
-            "password": "AAAA"
-        }
-    ]
+  "user": [
+    {
+      "email": "sugan0621@gmail.com",
+      "password": "sugan0621",
+      "name": "Suganya Prakash",
+      "id": 1
+    }
+  ]
 }

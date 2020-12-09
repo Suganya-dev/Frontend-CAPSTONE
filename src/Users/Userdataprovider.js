@@ -3,16 +3,16 @@ import "./User.css"
 export const UserContext = React.createContext()
 
 export const Userprovider = (props) =>{
-    const[users,serUsers] = usestate([])
+    const [users,setUsers] = usestate([])
 
 
 const getUsers = () =>{
     return fetch ("http://localhost:8088/user")
     .then(res => res.json())
-    .then(serUsers)
+    .then(setUsers)
 }
 
-const addUsers = (parents) =>{
+const addUsers = parents =>{
     return fetch("http://localhost:8088/user",{
     method: "POST",
             headers: {

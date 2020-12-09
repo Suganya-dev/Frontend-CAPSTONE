@@ -1,18 +1,23 @@
-
+import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import './App.css';
+import "./Users/User.css"
+import { ApplicationViews } from "./ApplicationViews"
+import { NavBar } from "./Nav/NavBar"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
 
 
-export const Chorepad =() =>{
+export const Chorepad =(props) =>(
   <>
    <Route render={() => {
           // The user id is saved under the key app_user_id in local Storage. Change below if needed!
-            if (localStorage.getItem("app_user_id")) {
+            if (localStorage.getItem("Kidschorepad_user")) {
                 return (
                     <>
                         //Components that are rendered when the user is authenticated go inside this React fragment
+                        <Route render={props => <NavBar {...props} />} />
+                         <Route render={props => <ApplicationViews {...props} />} />
                     </>
                 )
             } else {
@@ -23,7 +28,7 @@ export const Chorepad =() =>{
         <Route path="/login" render={props => <Login {...props} />} />
         <Route path="/register" render={props => <Register {...props} />} />
     </>
-}
+)
 
 
 

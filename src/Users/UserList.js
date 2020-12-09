@@ -3,7 +3,7 @@ import {UserContext} from "./Userdataprovider"
 import { Link } from "react-router-dom"
 import "./User.css"
 
-export const UserList = () =>{
+export const UserList = (props) =>{
  const{users, getUsers} = useContext(UserContext);
 
  useEffect(() =>{

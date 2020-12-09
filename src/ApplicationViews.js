@@ -7,8 +7,8 @@ export const ApplicationViews = (props) =>{
     return (
         <>
         <Userprovider>
-        <Route path="/Users">
-            <UserList/>
+        <Route exact path="/">
+            <UserList {...props}/>
                 </Route>   
         </Userprovider>
         </>)
