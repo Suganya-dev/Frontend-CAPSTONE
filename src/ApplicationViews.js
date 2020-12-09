@@ -9,7 +9,9 @@ export const ApplicationViews = (props) =>{
         <Userprovider>
         <Route exact path="/">
             <UserList {...props}/>
-                </Route>   
+                </Route> 
+                {/* <Route exact path="/users/create" render={
+                props => <UserForm {...props} /> } />   */}
         </Userprovider>
         </>)
 }

@@ -1,15 +1,15 @@
-import React,{usestate} from "react"
+import React,{useState } from "react"
 import "./User.css"
-export const UserContext = React.createContext()
+export const userContext = React.createContext()
 
 export const Userprovider = (props) =>{
-    const [users,setUsers] = usestate([])
+    const [user,setUser] = useState ([])
 
 
 const getUsers = () =>{
-    return fetch ("http://localhost:8088/user")
+    return fetch("http://localhost:8088/user")
     .then(res => res.json())
-    .then(setUsers)
+    .then(setUser)
 }
 
 const addUsers = parents =>{
@@ -24,10 +24,11 @@ const addUsers = parents =>{
     }
 
     return(
-        <UserContext.provider value = {
+        <userContext.provider value={
             {
-                users, addUsers,getUsers
+                user, addUsers,getUsers
             }} >
                 {props.children}
-            </UserContext.provider> )
+            </userContext.provider> 
+            )
 }
