@@ -24,11 +24,11 @@ const addUsers = parents =>{
     }
 
     return(
-        <userContext.provider value={
+        <userContext.Provider value={
             {
                 user, addUsers,getUsers
             }} >
                 {props.children}
-            </userContext.provider> 
+            </userContext.Provider> 
             )
 }

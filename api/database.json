@@ -1,10 +1,40 @@
 {
   "user": [
     {
-      "email": "sugan0621@gmail.com",
-      "password": "sugan0621",
-      "name": "Suganya Prakash",
+      "email": "jackrose@gmail.com",
+      "password": "jackrose",
+      "name": "David Mc donald",
       "id": 1
+    },
+    {
+      "email": "liyamax0621@gmail.com",
+      "password": "liyamax",
+      "name": "Liya Max",
+      "id": 2
+    },
+    {
+      "email": "lima0621@gmail.com",
+      "password": "liyamax",
+      "name": "li ma",
+      "id": 3
+    },
+    {
+      "email": "scott0621@gmail.com",
+      "password": "scott0621",
+      "name": "Scott silver",
+      "id": 4
+    },
+    {
+      "email": "jackemma@gmail.com",
+      "password": "jackemma",
+      "name": "jack Emma",
+      "id": 5
+    },
+    {
+      "email": "jackprak0621@gmail.com",
+      "password": "jackprak",
+      "name": "jack Prakash",
+      "id": 6
     }
   ]
 }

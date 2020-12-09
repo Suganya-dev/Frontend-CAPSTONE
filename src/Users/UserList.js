@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 import {Usercard} from "./User"
 import "./User.css"
 
-export const UserList = (props) =>{
+export const UserList = () =>{
  const{user, getUsers} = useContext(userContext);
 
  useEffect(() =>{
@@ -14,7 +14,7 @@ export const UserList = (props) =>{
  return (
     <div className="Users">
     {
-        user.map(cust => <Usercard key={cust.id} customer={cust} />)
+        user.map(cust => <Usercard key={cust.id} users={cust} />)
     }
     </div>
 )

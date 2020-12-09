@@ -40,7 +40,7 @@ export const Register = (props) => {
                             .then(createdUser => {
                                 if (createdUser.hasOwnProperty("id")) {
                                     // The user id is saved under the key app_user_id in local Storage. Change below if needed!
-                                    localStorage.setItem("Kidschorepad_user", createdUser.id)
+                                    localStorage.setItem ("kidschorepad_user", createdUser.id)
                                     props.history.push("/")
                                 }
                             })
@@ -90,8 +90,8 @@ export const Register = (props) => {
                     <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Sig
-                    n in </button>
+                    <button type="submit"> Sign in
+                     </button>
                 </fieldset>
             </form>
         </main>
