@@ -2,13 +2,15 @@ import React from "react"
 import { Route } from "react-router-dom"
 import {Userprovider} from "./Users/Userdataprovider"
 import {UserList} from "./Users/UserList"
+import {Userform} from "./Users/Userform"
+import {ParentsDashboard} from "./parents/ParentsDashBoard"
 
 export const ApplicationViews = (props) =>{
     return (
         <>
         <Userprovider>
         <Route exact path="/">
-            <UserList {...props}/>
+            <ParentsDashboard {...props}/>
                 </Route> 
             <Route exact path="/users" render={
                 props => <UserList {...props} /> } /> 

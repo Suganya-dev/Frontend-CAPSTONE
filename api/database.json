@@ -1,5 +1,5 @@
 {
-  "user": [
+  "users": [
     {
       "email": "jackrose@gmail.com",
       "password": "jackrose",
@@ -30,11 +30,22 @@
       "name": "jack Emma",
       "id": 5
     },
-    {
-      "email": "jackprak0621@gmail.com",
-      "password": "jackprak",
-      "name": "jack Prakash",
-      "id": 6
-    }
+   
+   {
+    "email": "jackprak0621@gmail.com",
+    "password": "jackprak",
+    "name": "Tarunika Prakash",
+    "id": 6,
+    "parentId":4
+  },
+   
+  {
+    "email": "jackprak0621@gmail.com",
+    "password": "jackprak",
+    "name": "Divashini Prakash",
+    "id": 6,
+    "parentId":4
+  }
+ 
   ]
 }

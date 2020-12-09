@@ -1,20 +1,20 @@
-import React,{useState } from "react"
+import React, { useState } from "react"
 import "./User.css"
 export const userContext = React.createContext()
 
-export const Userprovider = (props) =>{
-    const [user,setUser] = useState ([])
+export const Userprovider = (props) => {
+    const [users, setUsers] = useState([])
 
 
-const getUsers = () =>{
-    return fetch("http://localhost:8088/user")
-    .then(res => res.json())
-    .then(setUser)
-}
+    const getUsers = () => {
+        return fetch("http://localhost:8088/users")
+            .then(res => res.json())
+            .then(setUsers)
+    }
 
-const addUsers = parents =>{
-    return fetch("http://localhost:8088/user",{
-    method: "POST",
+    const addUsers = parents => {
+        return fetch("http://localhost:8088/users", {
+            method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -23,12 +23,12 @@ const addUsers = parents =>{
             .then(getUsers)
     }
 
-    return(
+    return (
         <userContext.Provider value={
             {
-                user, addUsers,getUsers
+                users, addUsers, getUsers
             }} >
-                {props.children}
-            </userContext.Provider> 
-            )
+            {props.children}
+        </userContext.Provider>
+    )
 }
