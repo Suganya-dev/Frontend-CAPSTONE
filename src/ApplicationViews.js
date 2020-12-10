@@ -4,6 +4,7 @@ import {Userprovider} from "./parents/ParentsDataprovider"
 import {UserList} from "./Users/UserList"
 import {Activityform} from "./parents/ParentActivityForm"
 import {ParentsDashboard} from "./parents/ParentsDashBoard"
+import {NewKidsform} from "./parents/AddKidsForm"
 
 export const ApplicationViews = (props) =>{
     return (
@@ -15,6 +16,9 @@ export const ApplicationViews = (props) =>{
            
             <Route exact path="/users/create" render={
                  props => <Activityform {...props} />
+             } />
+             <Route exact path="/kids/create" render={
+                 props => <NewKidsform {...props} />
              } />
              
         </Userprovider>

@@ -30,9 +30,12 @@ export const ParentsDashboard =(props) =>{
             <div> 
             <h3>{kid.name}</h3>
          
-                    
             <button onClick={() => props.history.push("/users/create")}>
              Add Activity
+            </button>
+
+            <button onClick={() => props.history.push("/kids/create")}>
+             Add New Child
             </button>
             </div>
         )})
