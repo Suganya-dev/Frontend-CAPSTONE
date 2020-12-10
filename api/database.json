@@ -45,34 +45,21 @@
       "parentId": 8
     },
     {
-      "Name": "Swimming",
-      "Type": "1",
-      "Time": "1",
-      "Rewards": "1",
-      "Repeat": "1",
-      "id": 7
-    },
-    {
       "email": "suganprakash0621@gmail.com",
       "password": "sugan0621",
       "name": "Suganya Prakash",
       "id": 8
     },
     {
-      "Name": "Swimming",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "3",
-      "Repeat": "4",
-      "id": 9
-    },
-    {
       "name": "Liya",
       "email": "suganprakash0621@gmail.com",
       "password": "sugan0621",
-      "age": 5,
-      "grade": "2",
-      "id": 10
+      "dob": "2020-07-15",
+      "parentId": 8,
+      "id": 9
     }
+  ],
+  "activities":[
+    
   ]
 }
