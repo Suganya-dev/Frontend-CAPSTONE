@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import "./User.css"
+import "./Parent.css"
 export const userContext = React.createContext()
 
 export const Userprovider = (props) => {

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-import {userContext} from "./Userdataprovider"
+import {userContext} from "../parents/ParentsDataprovider"
 import { Link } from "react-router-dom"
 import {Usercard} from "./User"
 import "./User.css"
@@ -20,7 +20,7 @@ return(
 <article className="userList"> 
       
         {
-        user.map(employee => {
+        users.map(employee => {
             return <Link key={employee.id} to={`/users/${employee.id}`}>
                 <h3>{employee.name}</h3>
                 </Link>
