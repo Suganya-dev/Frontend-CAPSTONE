@@ -24,6 +24,9 @@ export const ParentsDashboard =(props) =>{
   return(
         <>
         {parent? parent.name : "no-parent"}
+        <button onClick={() => props.history.push("/kids/create")}>
+             Add New Child
+            </button>
         {
         kids.map(kid=>{
             return (
@@ -32,10 +35,6 @@ export const ParentsDashboard =(props) =>{
          
             <button onClick={() => props.history.push("/users/create")}>
              Add Activity
-            </button>
-
-            <button onClick={() => props.history.push("/kids/create")}>
-             Add New Child
             </button>
             </div>
         )})

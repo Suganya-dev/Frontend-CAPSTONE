@@ -23,10 +23,17 @@ export const Userprovider = (props) => {
             .then(getUsers)
     }
 
+    const releaseAnimal = userId => {
+        return fetch(`http://localhost:8088/users/${userId}`, {
+            method: "DELETE"
+        })
+            .then(getUsers)
+    }
+
     return (
         <userContext.Provider value={
             {
-                users, addUsers, getUsers
+                users, addUsers, getUsers,releaseAnimal
             }} >
             {props.children}
         </userContext.Provider>

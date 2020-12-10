@@ -2,7 +2,7 @@ import React, { useContext, useRef, useEffect } from "react"
 import { userContext } from "../parents/ParentsDataprovider"
 import "./Parent.css"
 
-export const NewKidsform = () =>{
+export const NewKidsform = (props) =>{
     const{getUsers,addUsers} = useContext(userContext)
 
     const name = useRef(null)
@@ -32,7 +32,7 @@ export const NewKidsform = () =>{
             age:parsedage,
             grade:kidsgrade
         }) 
-        .then(() => Props.history.push("/kids"))
+        .then(() => props.history.push("/kids"))
     }}
     return (
         <form className="userForm">
@@ -46,13 +46,13 @@ export const NewKidsform = () =>{
        
         <fieldset>
             <div className="form-group">
-                <label htmlFor="employeeName">Kids name: </label>
+                <label htmlFor="employeeName">Email: </label>
                 <input type="text" id="employeeName" ref={email} required autoFocus className="form-control" placeholder="email" />
             </div>
         </fieldset>
         <fieldset>
             <div className="form-group">
-                <label htmlFor="employeeName">Kids name: </label>
+                <label htmlFor="employeeName">Password: </label>
                 <input type="text" id="employeeName" ref={password} required autoFocus className="form-control" placeholder="password" />
             </div>
         </fieldset>

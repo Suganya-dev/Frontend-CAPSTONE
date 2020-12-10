@@ -65,6 +65,14 @@
       "Rewards": "3",
       "Repeat": "4",
       "id": 9
+    },
+    {
+      "name": "Liya",
+      "email": "suganprakash0621@gmail.com",
+      "password": "sugan0621",
+      "age": 5,
+      "grade": "2",
+      "id": 10
     }
   ]
 }
