@@ -10,18 +10,19 @@ export const ApplicationViews = (props) =>{
     return (
         <>
         <Userprovider>
-          
                 <Route exact path="/">
             <ParentsDashboard {...props}/>
                 </Route> 
            
-            <Route exact path="/activities/create" render={
+          <ActivityProvider>
+            <Route exact path="/activities/create/:kidsId(\d+)" render={
                  props => <Activityform {...props} />
              } />
+            </ActivityProvider>
+            
              <Route exact path="/kids/create" render={
                  props => <NewKidsform {...props} />
              } />
-              
         </Userprovider>
         </>
     )

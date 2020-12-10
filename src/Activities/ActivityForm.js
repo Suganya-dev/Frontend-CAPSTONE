@@ -1,15 +1,15 @@
 import React, { useContext, useRef, useEffect } from "react"
-import { activityContext } from "./Activitydataprovider"
+import { ActivityContext } from "./Activitydataprovider"
 import "./Activity.css"
 
 export const Activityform = (props) =>{
-    const{addActivity,getActivity} = useContext(activityContext)
+    const{addActivity,getActivity} = useContext(ActivityContext)
 
     const Name = useRef(null)
     const Type = useRef(null)
     const Time = useRef(null)
     const Rewards = useRef(null)
-    const Repeat = useRef(null)
+  
 
     useEffect(() =>{
         getActivity()
@@ -20,10 +20,10 @@ export const Activityform = (props) =>{
         const ActivityType = Type.current.value
         const TimeLimit = Time.current.value
         const RewardPoints = Rewards.current.value
-        const RepeatTime = Repeat.current.value
+       const kidsId = parseInt(localStorage.getItem("kidschorepad_user"))
     
         if(ActivityName === "" || ActivityType === "" || TimeLimit ==="" ||
-        RewardPoints === ""|| RepeatTime=== ""){
+        RewardPoints === ""){
             window.alert("please select a Name,Type,Time Limit and Rewards Points")
         }else{
             addActivity({
@@ -31,9 +31,9 @@ export const Activityform = (props) =>{
                 Type : ActivityType,
                 Time : TimeLimit,
                 Rewards:RewardPoints,
-                Repeat : RepeatTime
+                kidsId:kidsId
             })
-            .then(() => props.history.push("/activities"))
+            .then(() => props.history.push("/"))
         }
         }
         return (
@@ -71,24 +71,10 @@ export const Activityform = (props) =>{
                         </select>
                         </div>
                         </fieldset>
-                        <fieldset>
-                <div className="form-group">
-                <label htmlFor="age">Repeat: </label>
-                <select defaultValue="" name="age" ref={Repeat} id="employeeLocation" className="form-control" >
-                <option value="1">Repeat</option>
-                <option value="2">Repeat all days</option>
-                <option value="3">Repeat every 2 days</option>
-                <option value="4">Repeat all sundays</option>
-                <option value="4">Repeat all fridays</option>
-                <option value="4"> Repeat all Mondays</option>
-                <option value="4">Repeat every 3 days</option>
-                </select>
-                </div>
-                </fieldset>
-
+                        
                 <fieldset>
                 <div className="form-group">
-                <label htmlFor="age">Repeat: </label>
+                <label htmlFor="age">RewardPoints: </label>
                 <select defaultValue="" name="age" ref={Rewards} id="employeeLocation" className="form-control" >
                 <option value="1">Reward Points</option>
                 <option value="2">25 pts</option>

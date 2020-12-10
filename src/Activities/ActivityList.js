@@ -13,18 +13,10 @@ useEffect(() =>{
 return(
     <>
     <h1>Activities</h1>
-    <button onClick={() => props.history.push("/activities/create")}>
-    Add Activity
-   </button>
+    
 
    <article className="activityList"> 
-   {
-       activities.map(act =>{
-           return(
-            <h3>{act.name}</h3>
-           )
-       })
-   }
+  
    </article>
    </>
 )}

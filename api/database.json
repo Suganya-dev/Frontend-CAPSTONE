@@ -93,14 +93,6 @@
       "id": 15
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "dob": "",
-      "parentId": 1,
-      "id": 16
-    },
-    {
       "name": "Dax",
       "email": "danny0621@gmail.com",
       "password": "danny0621",
@@ -117,13 +109,46 @@
       "id": 18
     },
     {
-      "name": "",
-      "email": "",
-      "password": "",
-      "dob": "",
+      "name": "Dax",
+      "email": "dax0111@gmail.com",
+      "password": "dax0621",
+      "dob": "2020-01-02",
       "parentId": 1,
-      "id": 19
+      "id": 20
+    },
+    {
+      "name": "Dax",
+      "email": "dax111@gmail.com",
+      "password": "bhjgh",
+      "dob": "2020-10-07",
+      "parentId": 1,
+      "id": 22
     }
   ],
-  "activities": []
+  "activities": [
+    {
+      "Name": "Swimming",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "4",
+      "kidsId": "1",
+      "id": 1
+    },
+    {
+      "Name": "Music class",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "4",
+      "kidsId": 1,
+      "id": 2
+    },
+    {
+      "Name": "Ballet classs",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "3",
+      "kidsId": 1,
+      "id": 3
+    }
+  ]
 }

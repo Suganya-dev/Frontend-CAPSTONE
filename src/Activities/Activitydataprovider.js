@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import "./Activity.css"
-export const activityContext = React.createContext()
+export const ActivityContext = React.createContext()
 
 export const ActivityProvider =(props) =>{
     const[activities,setActivities] = useState([])
@@ -24,9 +24,9 @@ const addActivity = (activities) =>{
 }
 
 return(
-    <activityContext.Provider value = {{
+    <ActivityContext.Provider value = {{
         activities,getActivity,addActivity
     }}>
         {props.children}
-    </activityContext.Provider>
+    </ActivityContext.Provider>
 )}
