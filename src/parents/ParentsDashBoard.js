@@ -1,6 +1,7 @@
 import React,{useEffect,useContext, useState} from "react"
 import {userContext} from "./ParentsDataprovider"
 import { Link } from "react-router-dom"
+import {Kidcard} from "./Kidcard"
 
 
 export const ParentsDashboard =(props) =>{
@@ -28,12 +29,9 @@ export const ParentsDashboard =(props) =>{
              Add New Child
             </button>
         {
-        kids.map(kid=>{
-            return (
-            <div> 
-            <h3>{kid.name}</h3>
-            </div>
-         )})
-         }
+        kids.map(kid=>{ 
+        <Kidcard key={kid.id} kiduser={kid} />
+        })
+    }
 </>
-    )} 
+  )}

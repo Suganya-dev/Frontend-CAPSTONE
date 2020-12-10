@@ -10,7 +10,7 @@ export const ApplicationViews = (props) =>{
     return (
         <>
         <Userprovider>
-            <ActivityProvider>
+          
                 <Route exact path="/">
             <ParentsDashboard {...props}/>
                 </Route> 
@@ -21,7 +21,7 @@ export const ApplicationViews = (props) =>{
              <Route exact path="/kids/create" render={
                  props => <NewKidsform {...props} />
              } />
-              </ActivityProvider>
+              
         </Userprovider>
         </>
     )

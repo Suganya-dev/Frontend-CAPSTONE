@@ -33,7 +33,7 @@ export const NewKidsform = (props) =>{
             dob: kidsdob,
             parentId:parentId
         }) 
-        .then(() => props.history.push("/kids"))
+        .then(() => props.history.push("/"))
     }}
     return (
         <form className="userForm">
