@@ -12,7 +12,7 @@ export const Kidcard = (props) =>{
     },[])
 
     useEffect(() =>{
-       const foundactivity = activities.find(A => A.id === (props.kiduser.id))
+       const foundactivity = activities.filter(A => A.kidsId === props.kiduser.id) || []
        setActivity(foundactivity)},[activities])
     
     // {console.log(props)}
@@ -21,15 +21,15 @@ export const Kidcard = (props) =>{
     <section className="users">
     <h3 className="kiduser__name">Name:{props.kiduser.name}</h3>
 
-    <button  onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}>
+     <button  onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}> */}
     Add Activity
-   </button>
+   </button> 
   
   
   {
     activity.map(act => {
         return (
-            <h3>{act.name}
+            <h3>{act.Name}
             </h3>
         )
     })

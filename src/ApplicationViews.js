@@ -10,9 +10,11 @@ export const ApplicationViews = (props) =>{
     return (
         <>
         <Userprovider>
+            <ActivityProvider> 
                 <Route exact path="/">
             <ParentsDashboard {...props}/>
                 </Route> 
+                </ActivityProvider>
            
           <ActivityProvider>
             <Route exact path="/activities/create/:kidsId(\d+)" render={

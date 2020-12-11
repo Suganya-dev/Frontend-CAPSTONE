@@ -123,23 +123,23 @@
       "dob": "2020-10-07",
       "parentId": 1,
       "id": 22
+    },
+    {
+      "name": "Dax",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Manio",
+      "dob": "2020-10-07",
+      "parentId": 1,
+      "id": 23
     }
   ],
   "activities": [
-    {
-      "Name": "Swimming",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "4",
-      "kidsId": "1",
-      "id": 1
-    },
     {
       "Name": "Music class",
       "Type": "3",
       "Time": "4",
       "Rewards": "4",
-      "kidsId": 1,
+      "kidsId": 23,
       "id": 2
     },
     {
@@ -147,8 +147,16 @@
       "Type": "3",
       "Time": "4",
       "Rewards": "3",
-      "kidsId": 1,
+      "kidsId": 23,
       "id": 3
+    },
+    {
+      "Name": "Piano class",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "4",
+      "kidsId": 1,
+      "id": 4
     }
   ]
 }
