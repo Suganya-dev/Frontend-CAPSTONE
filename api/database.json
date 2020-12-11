@@ -86,22 +86,6 @@
     },
     {
       "name": "Dax",
-      "email": "jackrose@gmail.com",
-      "password": "max",
-      "dob": "2020-12-12",
-      "parentId": 1,
-      "id": 15
-    },
-    {
-      "name": "Dax",
-      "email": "danny0621@gmail.com",
-      "password": "danny0621",
-      "dob": "2020-12-18",
-      "parentId": 1,
-      "id": 17
-    },
-    {
-      "name": "Dax",
       "email": "danny0621@gmail.com",
       "password": "danny0621",
       "dob": "2020-12-16",
@@ -131,6 +115,14 @@
       "dob": "2020-10-07",
       "parentId": 1,
       "id": 23
+    },
+    {
+      "name": "David",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Sara",
+      "dob": "2020-12-19",
+      "parentId": 1,
+      "id": 24
     }
   ],
   "activities": [
@@ -157,6 +149,38 @@
       "Rewards": "4",
       "kidsId": 1,
       "id": 4
+    },
+    {
+      "Name": "Piano class",
+      "Type": "3",
+      "Time": "2",
+      "Rewards": "3",
+      "kidsId": 23,
+      "id": 6
+    },
+    {
+      "Name": "Clean up your space",
+      "Type": "2",
+      "Time": "2",
+      "Rewards": "2",
+      "kidsId": 24,
+      "id": 7
+    },
+    {
+      "Name": "Math class",
+      "Type": "3",
+      "Time": "3",
+      "Rewards": "3",
+      "kidsId": 24,
+      "id": 8
+    },
+    {
+      "Name": "Swimming",
+      "Type": "3",
+      "Time": "3",
+      "Rewards": "2",
+      "kidsId": 18,
+      "id": 9
     }
   ]
 }
