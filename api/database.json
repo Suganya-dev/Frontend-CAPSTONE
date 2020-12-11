@@ -1,0 +1,154 @@
+{
+  "users": [
+    {
+      "email": "jackrose@gmail.com",
+      "password": "jackrose",
+      "name": "David Mc donald",
+      "id": 1
+    },
+    {
+      "email": "liyamax0621@gmail.com",
+      "password": "liyamax",
+      "name": "Liya Max",
+      "id": 2
+    },
+    {
+      "email": "lima0621@gmail.com",
+      "password": "liyamax",
+      "name": "li ma",
+      "id": 3
+    },
+    {
+      "email": "scott0621@gmail.com",
+      "password": "scott0621",
+      "name": "Scott silver",
+      "id": 4
+    },
+    {
+      "email": "jackemma@gmail.com",
+      "password": "jackemma",
+      "name": "jack Emma",
+      "id": 5
+    },
+    {
+      "email": "suganprakash0621@gmail.com",
+      "password": "sugan0621",
+      "name": "Suganya Prakash",
+      "id": 8
+    },
+    {
+      "name": "Liya",
+      "email": "suganprakash0621@gmail.com",
+      "password": "sugan0621",
+      "dob": "2020-07-15",
+      "parentId": 8,
+      "id": 9
+    },
+    {
+      "name": "santhosh",
+      "email": "suganprakash0621@gmail.com",
+      "password": "sugan0621",
+      "dob": "2020-12-25",
+      "parentId": 8,
+      "id": 10
+    },
+    {
+      "name": "Bryan",
+      "email": "suganprakash0621@gmail.com",
+      "password": "bryan",
+      "dob": "2020-12-09",
+      "parentId": 8,
+      "id": 11
+    },
+    {
+      "name": "Jisie",
+      "email": "suganprakash0621@gmail.com",
+      "password": "david",
+      "dob": "2020-12-08",
+      "parentId": 8,
+      "id": 12
+    },
+    {
+      "name": "Tarunika",
+      "email": "suganprakash0621@gmail.com",
+      "password": "sugan0621",
+      "dob": "2020-12-19",
+      "parentId": 8,
+      "id": 13
+    },
+    {
+      "name": "Diva",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Manio",
+      "dob": "2020-12-01",
+      "parentId": 8,
+      "id": 14
+    },
+    {
+      "name": "Dax",
+      "email": "jackrose@gmail.com",
+      "password": "max",
+      "dob": "2020-12-12",
+      "parentId": 1,
+      "id": 15
+    },
+    {
+      "name": "Dax",
+      "email": "danny0621@gmail.com",
+      "password": "danny0621",
+      "dob": "2020-12-18",
+      "parentId": 1,
+      "id": 17
+    },
+    {
+      "name": "Dax",
+      "email": "danny0621@gmail.com",
+      "password": "danny0621",
+      "dob": "2020-12-16",
+      "parentId": 1,
+      "id": 18
+    },
+    {
+      "name": "Dax",
+      "email": "dax0111@gmail.com",
+      "password": "dax0621",
+      "dob": "2020-01-02",
+      "parentId": 1,
+      "id": 20
+    },
+    {
+      "name": "Dax",
+      "email": "dax111@gmail.com",
+      "password": "bhjgh",
+      "dob": "2020-10-07",
+      "parentId": 1,
+      "id": 22
+    }
+  ],
+  "activities": [
+    {
+      "Name": "Swimming",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "4",
+      "kidsId": "1",
+      "id": 1
+    },
+    {
+      "Name": "Music class",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "4",
+      "kidsId": 1,
+      "id": 2
+    },
+    {
+      "Name": "Ballet classs",
+      "Type": "3",
+      "Time": "4",
+      "Rewards": "3",
+      "kidsId": 1,
+      "id": 3
+    }
+  ]
+}
