@@ -44,7 +44,7 @@ console.log(activities)
 {/* code to edit the activity */}
 
 <button onClick={() => {
-                props.history.push(`/activities/edit/${props.match.params.activityId}`)
-            }}>Edit</button>
+    props.history.push(`/activities/edit/${props.match.params.activityId}`)
+    }}>Edit Activity</button>
 </>
     )}

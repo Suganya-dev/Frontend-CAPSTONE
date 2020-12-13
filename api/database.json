@@ -93,14 +93,6 @@
       "id": 22
     },
     {
-      "name": "Dax",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Manio",
-      "dob": "2020-10-07",
-      "parentId": 1,
-      "id": 23
-    },
-    {
       "name": "David",
       "email": "suganprakash0621@gmail.com",
       "password": "Sara",
@@ -123,6 +115,14 @@
       "dob": "2020-12-16",
       "parentId": 1,
       "id": 26
+    },
+    {
+      "name": "Deepu",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Sara",
+      "dob": "2019-04-17",
+      "parentId": 1,
+      "id": 27
     }
   ],
   "activities": [
@@ -173,6 +173,22 @@
       "Rewards": "50 pts",
       "kidsId": 26,
       "id": 9
+    },
+    {
+      "Name": "Singing",
+      "Type": "Classes",
+      "Time": "30 mins",
+      "Rewards": "50 pts",
+      "kidsId": 25,
+      "id": 10
+    },
+    {
+      "Name": "Piano class",
+      "Type": "Classes",
+      "Time": "30 mins",
+      "Rewards": "75 pts",
+      "kidsId": 27,
+      "id": 13
     }
   ]
 }

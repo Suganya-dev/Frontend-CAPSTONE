@@ -3,7 +3,7 @@ import {ActivityContext} from"./Activitydataprovider"
 import "./Activity.css"
 
 export const ActivityEditForm = (props) =>{
-    const{activities,getActivity,updateActivity} = useContext(ActivityContext)
+    const{activities,getActivity,updateActivity,addActivity} = useContext(ActivityContext)
 
 const[Activity,setActivity] = useState({})
 
@@ -32,9 +32,8 @@ useEffect(() =>{
 },[activities])
 
 const constructNewActivity = () => {
-
-    if(ActivityName === "" || ActivityType === "" || TimeLimit ==="" ||
-    RewardPoints === ""){
+    const activityId = parseInt(props.match.params.activityId)
+    if(activityId === 0){
         window.alert("please select a Name,Type,Time Limit and Rewards Points")
     }else{
         if(editMode){
@@ -43,9 +42,20 @@ const constructNewActivity = () => {
                 Type : Activity.Type,
                 Time : Activity.Time,
                 Rewards:Activity.Rewards,
-                kidsId:kidsId
+                activityId:activityId
+                // kidsId:kidsId
         })
         .then(() => props.history.push("/activities"))
+        }else{
+            addActivity({
+                Name : Activity.Name,
+                Type : Activity.Type,
+                Time : Activity.Time,
+                Rewards:Activity.Rewards,
+                activityId:activityId
+
+            })
+            .then(() => props.history.push("/activities"))
         }}
     }
     return (
@@ -54,7 +64,7 @@ const constructNewActivity = () => {
                     <fieldset>
                         <div className="form-group">
                             <label htmlFor="employeeName">Activity Name: </label>
-                            <input type="text" id="employeeName" ref={Name} required autoFocus className="form-control" placeholder="Activity name"
+                            <input type="text" id="employeeName"  required autoFocus className="form-control" placeholder="Activity name"
                              onChange={handleControlledInputChange}/>
                         </div>
                     </fieldset>
@@ -62,7 +72,7 @@ const constructNewActivity = () => {
                     <fieldset>
                         <div className="form-group">
                         <label htmlFor="age">Activity Type: </label>
-                        <select defaultValue="" name="age" ref={Type} id="employeeLocation" className="form-control" 
+                        <select defaultValue="" name="age"  id="employeeLocation" className="form-control" 
                         onChange={handleControlledInputChange}>
                         <option value="1">Select Activity Type</option>
                         <option value="Chores">Chores</option>
@@ -75,7 +85,7 @@ const constructNewActivity = () => {
                         <fieldset>
                         <div className="form-group">
                         <label htmlFor="age">Time Limit: </label>
-                        <select defaultValue="" name="age" ref={Time} id="employeeLocation" className="form-control"
+                        <select defaultValue="" name="age" id="employeeLocation" className="form-control"
                          onChange={handleControlledInputChange} >
                         <option value="1">Select Time Limit</option>
                         <option value="15 mins">15 mins</option>
@@ -91,7 +101,7 @@ const constructNewActivity = () => {
                         <fieldset>
                 <div className="form-group">
                 <label htmlFor="age">RewardPoints: </label>
-                <select defaultValue="" name="age" ref={Rewards} id="employeeLocation" className="form-control"
+                <select defaultValue="" name="age" id="employeeLocation" className="form-control"
                  onChange={handleControlledInputChange} >
                 <option value="1">Reward Points</option>
                 <option value="25 pts">25 pts</option>
@@ -105,7 +115,7 @@ const constructNewActivity = () => {
                 <button type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
-                    ConstructNewActivity()
+                    constructNewActivity()
                 }}
                 className="btn btn-primary">
                 Save Activity

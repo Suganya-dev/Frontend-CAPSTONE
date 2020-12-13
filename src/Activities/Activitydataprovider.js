@@ -30,13 +30,13 @@ const releaseActivity = activityId =>{
     .then(getActivity)
 }
 
-const updateActivity = activityId =>{
-    return fetch(`http://localhost:8088/activities/${activityId}`,{
+const updateActivity = activities =>{
+    return fetch(`http://localhost:8088/activities/${activities.id}`,{
         method:"PUT",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(activityId)
+        body: JSON.stringify(activities)
     })
     .then(getActivity)
 }
