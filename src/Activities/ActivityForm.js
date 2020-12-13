@@ -50,9 +50,9 @@ export const Activityform = (props) =>{
                         <label htmlFor="age">Activity Type: </label>
                         <select defaultValue="" name="age" ref={Type} id="employeeLocation" className="form-control" >
                         <option value="1">Select Activity Type</option>
-                        <option value="2">Chores</option>
-                        <option value="3">Classes</option>
-                        <option value="4">Special Events</option>
+                        <option value="Chores">Chores</option>
+                        <option value="Classes">Classes</option>
+                        <option value="Special Events">Special Events</option>
                         </select>
                         </div>
                         </fieldset>
@@ -62,12 +62,12 @@ export const Activityform = (props) =>{
                         <label htmlFor="age">Time Limit: </label>
                         <select defaultValue="" name="age" ref={Time} id="employeeLocation" className="form-control" >
                         <option value="1">Select Time Limit</option>
-                        <option value="2">15 mins</option>
-                        <option value="3">30 mins</option>
-                        <option value="4">45 mins</option>
-                        <option value="4">60 mins(1 hr)</option>
-                        <option value="4"> 90 mins</option>
-                        <option value="4"> 120 mins(2 hr)</option>
+                        <option value="15 mins">15 mins</option>
+                        <option value="30 mins">30 mins</option>
+                        <option value="45 mins">45 mins</option>
+                        <option value="60 mins(1 hr)">60 mins(1 hr)</option>
+                        <option value=" 90 mins"> 90 mins</option>
+                        <option value=" 120 mins(2 hr)"> 120 mins(2 hr)</option>
                         </select>
                         </div>
                         </fieldset>
@@ -77,10 +77,10 @@ export const Activityform = (props) =>{
                 <label htmlFor="age">RewardPoints: </label>
                 <select defaultValue="" name="age" ref={Rewards} id="employeeLocation" className="form-control" >
                 <option value="1">Reward Points</option>
-                <option value="2">25 pts</option>
-                <option value="3">50 pts</option>
-                <option value="4">75 pts</option>
-                <option value="4">100 pts</option>
+                <option value="25 pts">25 pts</option>
+                <option value="50 pts">50 pts</option>
+                <option value="75 pts">75 pts</option>
+                <option value="100 pts">100 pts</option>
                 </select>
                 </div>
                 </fieldset>

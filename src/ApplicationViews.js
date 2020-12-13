@@ -5,6 +5,7 @@ import {Activityform} from "./Activities/ActivityForm"
 import {ParentsDashboard} from "./parents/ParentsDashBoard"
 import {NewKidsform} from "./parents/AddKidsForm"
 import {ActivityProvider} from "./Activities/Activitydataprovider"
+import {ActivityDetail} from "./Activities/Activitydetail"
 
 export const ApplicationViews = (props) =>{
     return (
@@ -20,6 +21,10 @@ export const ApplicationViews = (props) =>{
             <Route exact path="/activities/create/:kidsId(\d+)" render={
                  props => <Activityform {...props} />
              } />
+             {/* New route for showing activity details */}
+            <Route path="/activities/:activityId(\d+)" render={
+                props => <ActivityDetail {...props} />
+            } />
             </ActivityProvider>
             
              <Route exact path="/kids/create" render={

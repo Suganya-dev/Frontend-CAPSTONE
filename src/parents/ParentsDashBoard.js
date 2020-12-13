@@ -34,3 +34,12 @@ export const ParentsDashboard =(props) =>{
     }
 </>
   )}
+
+//   {
+//     kidActivities.map(act => {
+//         return (
+//             <h3>{act.Name}
+//             </h3>
+//         )
+//     })
+// }

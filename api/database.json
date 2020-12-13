@@ -86,22 +86,6 @@
     },
     {
       "name": "Dax",
-      "email": "danny0621@gmail.com",
-      "password": "danny0621",
-      "dob": "2020-12-16",
-      "parentId": 1,
-      "id": 18
-    },
-    {
-      "name": "Dax",
-      "email": "dax0111@gmail.com",
-      "password": "dax0621",
-      "dob": "2020-01-02",
-      "parentId": 1,
-      "id": 20
-    },
-    {
-      "name": "Dax",
       "email": "dax111@gmail.com",
       "password": "bhjgh",
       "dob": "2020-10-07",
@@ -123,64 +107,40 @@
       "dob": "2020-12-19",
       "parentId": 1,
       "id": 24
+    },
+    {
+      "name": "Max",
+      "email": "max0621@gmail.com",
+      "password": "max0621",
+      "dob": "2019-12-20",
+      "parentId": 1,
+      "id": 25
     }
   ],
   "activities": [
     {
-      "Name": "Music class",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "4",
-      "kidsId": 23,
-      "id": 2
-    },
-    {
-      "Name": "Ballet classs",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "3",
-      "kidsId": 23,
-      "id": 3
-    },
-    {
-      "Name": "Piano class",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "4",
-      "kidsId": 1,
-      "id": 4
-    },
-    {
-      "Name": "Piano class",
-      "Type": "3",
-      "Time": "2",
-      "Rewards": "3",
-      "kidsId": 23,
-      "id": 6
-    },
-    {
-      "Name": "Clean up your space",
-      "Type": "2",
-      "Time": "2",
-      "Rewards": "2",
-      "kidsId": 24,
-      "id": 7
-    },
-    {
-      "Name": "Math class",
-      "Type": "3",
-      "Time": "3",
-      "Rewards": "3",
-      "kidsId": 24,
-      "id": 8
+      "Name": "Soccer class",
+      "Type": "Classes",
+      "Time": "60 mins(1 hr)",
+      "Rewards": "100 pts",
+      "kidsId": 22,
+      "id": 15
     },
     {
       "Name": "Swimming",
-      "Type": "3",
-      "Time": "3",
-      "Rewards": "2",
-      "kidsId": 18,
-      "id": 9
+      "Type": "Classes",
+      "Time": "30 mins",
+      "Rewards": "50 pts",
+      "kidsId": 22,
+      "id": 16
+    },
+    {
+      "Name": "Clean Up your playarea",
+      "Type": "Chores",
+      "Time": "45 mins",
+      "Rewards": "75 pts",
+      "kidsId": 23,
+      "id": 17
     }
   ]
 }

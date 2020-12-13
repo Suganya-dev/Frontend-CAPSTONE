@@ -2,6 +2,8 @@ import React,{ useContext, useEffect,useState } from "react"
 import "./Parent.css"
 import {ActivityContext} from"../Activities/Activitydataprovider"
 import {userContext} from "./ParentsDataprovider"
+import {ActivityCard} from "../Activities/Activity.js"
+import { Link } from "react-router-dom"
 
 export const Kidcard = (props) =>{
     // console.log(props)
@@ -26,15 +28,15 @@ export const Kidcard = (props) =>{
     <button  onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}>
     Add Activity
    </button> 
-  
+   
+   {/* for makking hyperlink,using Link */}
   
   {
     kidActivities.map(act => {
-        return (
-            <h3>{act.Name}
-            </h3>
-        )
-    })
+        return <Link key={act.id} to={`/activities/${act.id}`}>
+             <h3>{act.Name}</h3>
+        </Link>
+        })
 }
 
 <button className="btn--release"
@@ -49,4 +51,5 @@ export const Kidcard = (props) =>{
 </section>
 </>
     )}
+
 
