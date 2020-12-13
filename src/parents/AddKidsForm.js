@@ -40,27 +40,29 @@ export const NewKidsform = (props) =>{
         <h2 className="userForm__title">Add New Kids</h2>
         <fieldset>
             <div className="form-group">
-                <label htmlFor="employeeName">Kids name: </label>
-                <input type="text" id="employeeName" ref={name} required autoFocus className="form-control" placeholder="Kid name" />
+                <label htmlFor="userName">Kids name: </label>
+                <input type="text" id="userName" ref={name} required autoFocus className="form-control"
+                placeholder="Kid name" />
             </div>
         </fieldset>
        
         <fieldset>
             <div className="form-group">
-                <label htmlFor="employeeName">Email: </label>
-                <input type="text" id="employeeName" ref={email} required autoFocus className="form-control" placeholder="email" />
+                <label htmlFor="userName">Email: </label>
+                <input type="email" id="userName" ref={email} required autoFocus className="form-control"
+                 placeholder="email" />
             </div>
         </fieldset>
         <fieldset>
             <div className="form-group">
-                <label htmlFor="employeeName">Password: </label>
-                <input type="text" id="employeeName" ref={password} required autoFocus className="form-control" placeholder="password" />
+                <label htmlFor="userName">Password: </label>
+                <input type="password" id="userName" ref={password} required autoFocus className="form-control" placeholder="password" />
             </div>
         </fieldset>
         <fieldset>
             <div className="form-group">
-                <label htmlFor="employeeName">Birthday: </label>
-                <input type="date" id="employeeName" ref={dob} required autoFocus className="form-control" placeholder="Date of Birth" />
+                <label htmlFor="userName">Birthday: </label>
+                <input type="date" id="userName" ref={dob} required autoFocus className="form-control" placeholder="Date of Birth" />
             </div>
         </fieldset>
        

@@ -47,14 +47,14 @@ export const Activityform = (props) =>{
                     <h2 className="ActivityForm__title">New Activity</h2>
                     <fieldset>
                         <div className="form-group">
-                            <label htmlFor="employeeName">Activity Name: </label>
-                            <input type="text" id="employeeName" ref={Name} required autoFocus className="form-control" placeholder="Activity name" />
+                            <label htmlFor="activityName">Activity Name: </label>
+                            <input type="text" id="activityName" ref={Name} required autoFocus className="form-control" placeholder="Activity name" />
                         </div>
                     </fieldset>
                     <fieldset>
                         <div className="form-group">
                         <label htmlFor="age">Activity Type: </label>
-                        <select defaultValue="" name="age" ref={Type} id="employeeLocation" className="form-control" >
+                        <select defaultValue="" name="age" ref={Type} id="activityLocation" className="form-control" >
                         <option value="1">Select Activity Type</option>
                         <option value="Chores">Chores</option>
                         <option value="Classes">Classes</option>
@@ -66,7 +66,7 @@ export const Activityform = (props) =>{
                         <fieldset>
                         <div className="form-group">
                         <label htmlFor="age">Time Limit: </label>
-                        <select defaultValue="" name="age" ref={Time} id="employeeLocation" className="form-control" >
+                        <select defaultValue="" name="age" ref={Time} id="activityTime" className="form-control" >
                         <option value="1">Select Time Limit</option>
                         <option value="15 mins">15 mins</option>
                         <option value="30 mins">30 mins</option>
@@ -81,7 +81,7 @@ export const Activityform = (props) =>{
                 <fieldset>
                 <div className="form-group">
                 <label htmlFor="age">RewardPoints: </label>
-                <select defaultValue="" name="age" ref={Rewards} id="employeeLocation" className="form-control" >
+                <select defaultValue="" name="age" ref={Rewards} id="activitypoints" className="form-control" >
                 <option value="1">Reward Points</option>
                 <option value="25 pts">25 pts</option>
                 <option value="50 pts">50 pts</option>
