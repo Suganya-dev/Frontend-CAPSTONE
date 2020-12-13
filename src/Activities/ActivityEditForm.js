@@ -24,6 +24,7 @@ const getActivityInEditMode = () => {
 }
 
 useEffect(() =>{
+    console.log(props.match.params)
     getActivity()
 },[])
 

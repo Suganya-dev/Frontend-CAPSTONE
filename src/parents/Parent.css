@@ -1,12 +1,15 @@
 .users{
     display: flex;
     flex-wrap: wrap;
+    /* margin: 1em; */
+    padding: 1em;
     justify-content: space-between;
+    border: 1px solid dodgerblue;
   }
   
   .user{
       flex-basis: 28%;
       margin: 1em;
       padding: 1em;
-      border: 1px solid goldenrod;
-  }
+      background-color: orange;
+    }

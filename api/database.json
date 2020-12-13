@@ -101,14 +101,6 @@
       "id": 24
     },
     {
-      "name": "Max",
-      "email": "max0621@gmail.com",
-      "password": "max0621",
-      "dob": "2019-12-20",
-      "parentId": 1,
-      "id": 25
-    },
-    {
       "name": "Dolly",
       "email": "suganprakash0621@gmail.com",
       "password": "Dax",
@@ -123,6 +115,14 @@
       "dob": "2019-04-17",
       "parentId": 1,
       "id": 27
+    },
+    {
+      "name": "Tarunika ",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Manio",
+      "dob": "2020-12-16",
+      "parentId": 1,
+      "id": 28
     }
   ],
   "activities": [
@@ -159,14 +159,6 @@
       "id": 7
     },
     {
-      "Name": "Soccer class",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "25 pts",
-      "kidsId": 22,
-      "id": 8
-    },
-    {
       "Name": "Clean up your space",
       "Type": "Chores",
       "Time": "30 mins",
@@ -189,6 +181,22 @@
       "Rewards": "75 pts",
       "kidsId": 27,
       "id": 13
+    },
+    {
+      "Name": "Soccer class",
+      "Type": "Classes",
+      "Time": "45 mins",
+      "Rewards": "50 pts",
+      "kidsId": 28,
+      "id": 14
+    },
+    {
+      "Name": "Piano class",
+      "Type": "Classes",
+      "Time": "30 mins",
+      "Rewards": "50 pts",
+      "kidsId": 22,
+      "id": 15
     }
   ]
 }

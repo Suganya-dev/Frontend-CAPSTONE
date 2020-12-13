@@ -19,6 +19,7 @@ export const ApplicationViews = (props) =>{
                 </ActivityProvider>
            
           <ActivityProvider>
+              
             <Route exact path="/activities/create/:kidsId(\d+)" render={
                  props => <Activityform {...props} />
              } />
