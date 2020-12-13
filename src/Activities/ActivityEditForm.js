@@ -60,12 +60,12 @@ const constructNewActivity = () => {
     }
     return (
         <form className="ActivityForm">
-                    <h2 className="ActivityForm__title">New Activity</h2>
+                    <h2 className="ActivityForm__title">{editMode ? "Update Activity" : "Add Activity"}</h2>
                     <fieldset>
                         <div className="form-group">
                             <label htmlFor="employeeName">Activity Name: </label>
                             <input type="text" id="employeeName"  required autoFocus className="form-control" placeholder="Activity name"
-                             onChange={handleControlledInputChange}/>
+                             value ={Activity.Name} onChange={handleControlledInputChange}/>
                         </div>
                     </fieldset>
             
@@ -73,7 +73,7 @@ const constructNewActivity = () => {
                         <div className="form-group">
                         <label htmlFor="age">Activity Type: </label>
                         <select defaultValue="" name="age"  id="employeeLocation" className="form-control" 
-                        onChange={handleControlledInputChange}>
+                        value = {Activity.Type} onChange={handleControlledInputChange}>
                         <option value="1">Select Activity Type</option>
                         <option value="Chores">Chores</option>
                         <option value="Classes">Classes</option>
@@ -86,7 +86,7 @@ const constructNewActivity = () => {
                         <div className="form-group">
                         <label htmlFor="age">Time Limit: </label>
                         <select defaultValue="" name="age" id="employeeLocation" className="form-control"
-                         onChange={handleControlledInputChange} >
+                         value = {Activity.Time} onChange={handleControlledInputChange} >
                         <option value="1">Select Time Limit</option>
                         <option value="15 mins">15 mins</option>
                         <option value="30 mins">30 mins</option>
@@ -102,7 +102,7 @@ const constructNewActivity = () => {
                 <div className="form-group">
                 <label htmlFor="age">RewardPoints: </label>
                 <select defaultValue="" name="age" id="employeeLocation" className="form-control"
-                 onChange={handleControlledInputChange} >
+                  value = {Activity.Rewards} onChange={handleControlledInputChange} >
                 <option value="1">Reward Points</option>
                 <option value="25 pts">25 pts</option>
                 <option value="50 pts">50 pts</option>
@@ -118,7 +118,8 @@ const constructNewActivity = () => {
                     constructNewActivity()
                 }}
                 className="btn btn-primary">
-                Save Activity
+                    {editMode ? "Save Activity" : "Add Activity"}
+                
             </button>
                 </form>
 )
