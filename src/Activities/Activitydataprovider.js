@@ -23,9 +23,27 @@ const addActivity = (activities) =>{
     .then(getActivity)
 }
 
+const releaseActivity = activityId =>{
+    return fetch(`http://localhost:8088/activities/${activityId}`,{
+        method: "DELETE"
+    })
+    .then(getActivity)
+}
+
+const updateActivity = activityId =>{
+    return fetch(`http://localhost:8088/activities/${activityId}`,{
+        method:"PUT",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(activityId)
+    })
+    .then(getActivity)
+}
+
 return(
     <ActivityContext.Provider value = {{
-        activities,getActivity,addActivity
+        activities,getActivity,addActivity,releaseActivity,updateActivity
     }}>
         {props.children}
     </ActivityContext.Provider>

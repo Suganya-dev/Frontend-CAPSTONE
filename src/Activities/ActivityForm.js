@@ -2,6 +2,7 @@ import React, { useContext, useRef, useEffect } from "react"
 import { ActivityContext } from "./Activitydataprovider"
 import "./Activity.css"
 
+//   // Use the required context providers for data
 export const Activityform = (props) =>{
     const{addActivity,getActivity} = useContext(ActivityContext)
 
@@ -9,7 +10,12 @@ export const Activityform = (props) =>{
     const Type = useRef(null)
     const Time = useRef(null)
     const Rewards = useRef(null)
-  
+
+//    // Component state
+//    const [Activity, setActivity] = useState({})
+
+    // // Is there a a URL parameter??
+    // const editMode = props.match.params.hasOwnProperty("animalId")
 
     useEffect(() =>{
         getActivity()

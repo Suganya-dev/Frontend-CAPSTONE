@@ -115,32 +115,64 @@
       "dob": "2019-12-20",
       "parentId": 1,
       "id": 25
+    },
+    {
+      "name": "Dolly",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Dax",
+      "dob": "2020-12-16",
+      "parentId": 1,
+      "id": 26
     }
   ],
   "activities": [
     {
-      "Name": "Soccer class",
+      "Name": "Swimming",
       "Type": "Classes",
-      "Time": "60 mins(1 hr)",
-      "Rewards": "100 pts",
-      "kidsId": 22,
-      "id": 15
+      "Time": "30 mins",
+      "Rewards": "50 pts",
+      "kidsId": 24,
+      "id": 4
     },
     {
       "Name": "Swimming",
       "Type": "Classes",
       "Time": "30 mins",
       "Rewards": "50 pts",
-      "kidsId": 22,
-      "id": 16
+      "kidsId": null,
+      "id": 5
     },
     {
-      "Name": "Clean Up your playarea",
-      "Type": "Chores",
-      "Time": "45 mins",
+      "Name": "Swimming",
+      "Type": "Classes",
+      "Time": "60 mins(1 hr)",
       "Rewards": "75 pts",
-      "kidsId": 23,
-      "id": 17
+      "kidsId": null,
+      "id": 6
+    },
+    {
+      "Name": "Soccer class",
+      "Type": "Classes",
+      "Time": "30 mins",
+      "Rewards": "50 pts",
+      "kidsId": null,
+      "id": 7
+    },
+    {
+      "Name": "Soccer class",
+      "Type": "Classes",
+      "Time": "30 mins",
+      "Rewards": "25 pts",
+      "kidsId": 22,
+      "id": 8
+    },
+    {
+      "Name": "Clean up your space",
+      "Type": "Chores",
+      "Time": "30 mins",
+      "Rewards": "50 pts",
+      "kidsId": 26,
+      "id": 9
     }
   ]
 }

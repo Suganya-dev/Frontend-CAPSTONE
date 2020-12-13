@@ -28,7 +28,7 @@ export const Kidcard = (props) =>{
     <button  onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}>
     Add Activity
    </button> 
-   
+
    {/* for makking hyperlink,using Link */}
   
   {
