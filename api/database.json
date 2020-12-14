@@ -86,69 +86,75 @@
     },
     {
       "name": "Dax",
-      "email": "jackrose@gmail.com",
-      "password": "max",
-      "dob": "2020-12-12",
-      "parentId": 1,
-      "id": 15
-    },
-    {
-      "name": "Dax",
-      "email": "danny0621@gmail.com",
-      "password": "danny0621",
-      "dob": "2020-12-18",
-      "parentId": 1,
-      "id": 17
-    },
-    {
-      "name": "Dax",
-      "email": "danny0621@gmail.com",
-      "password": "danny0621",
-      "dob": "2020-12-16",
-      "parentId": 1,
-      "id": 18
-    },
-    {
-      "name": "Dax",
-      "email": "dax0111@gmail.com",
-      "password": "dax0621",
-      "dob": "2020-01-02",
-      "parentId": 1,
-      "id": 20
-    },
-    {
-      "name": "Dax",
       "email": "dax111@gmail.com",
       "password": "bhjgh",
       "dob": "2020-10-07",
       "parentId": 1,
       "id": 22
+    },
+    {
+      "name": "David",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Sara",
+      "dob": "2020-12-19",
+      "parentId": 1,
+      "id": 24
+    },
+    {
+      "name": "Dolly",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Dax",
+      "dob": "2020-12-16",
+      "parentId": 1,
+      "id": 26
+    },
+    {
+      "name": "Deepu",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Sara",
+      "dob": "2019-04-17",
+      "parentId": 1,
+      "id": 27
+    },
+    {
+      "name": "Tarunika ",
+      "email": "suganprakash0621@gmail.com",
+      "password": "Manio",
+      "dob": "2020-12-16",
+      "parentId": 1,
+      "id": 28
     }
   ],
   "activities": [
     {
-      "Name": "Swimming",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "4",
-      "kidsId": "1",
-      "id": 1
+      "name": "Swimming",
+      "activityTypeId": "2",
+      "timeLimit": "3",
+      "rewardPoints": "3",
+      "userId": 24,
+      "isCompleted": false,
+      "date": "2020-12-17",
+      "id": 12
     },
     {
-      "Name": "Music class",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "4",
-      "kidsId": 1,
-      "id": 2
+      "name": "Fold your clothes",
+      "activityTypeId": "1",
+      "timeLimit": "2",
+      "rewardPoints": "1",
+      "userId": 26,
+      "isCompleted": false,
+      "date": "2020-12-18",
+      "id": 13
     },
     {
-      "Name": "Ballet classs",
-      "Type": "3",
-      "Time": "4",
-      "Rewards": "3",
-      "kidsId": 1,
-      "id": 3
+      "name": "Clean up your playarea",
+      "activityTypeId": "1",
+      "timeLimit": "2",
+      "rewardPoints": "2",
+      "userId": 22,
+      "isCompleted": false,
+      "date": "2020-12-24",
+      "id": 14
     }
   ]
 }

@@ -23,8 +23,8 @@ export const Userprovider = (props) => {
             .then(getUsers)
     }
 
-    const releaseAnimal = userId => {
-        return fetch(`http://localhost:8088/users/${userId}`, {
+    const releaseChild = kidsId=> {
+        return fetch(`http://localhost:8088/users/${kidsId}`, {
             method: "DELETE"
         })
             .then(getUsers)
@@ -33,7 +33,7 @@ export const Userprovider = (props) => {
     return (
         <userContext.Provider value={
             {
-                users, addUsers, getUsers,releaseAnimal
+                users, addUsers, getUsers,releaseChild
             }} >
             {props.children}
         </userContext.Provider>
