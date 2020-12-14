@@ -16,7 +16,7 @@ export const Kidcard = (props) =>{
     },[])
 
     useEffect(() =>{
-       const foundactivity = activities.filter(A => A.kidsId === props.kiduser.id) 
+       const foundactivity = activities.filter(A => A.userId === props.kiduser.id) 
        setkidActivities(foundactivity)},[activities])
     
   
@@ -34,7 +34,7 @@ export const Kidcard = (props) =>{
   {
     kidActivities.map(act => {
         return <Link key={act.id} to={`/activities/${act.id}`}>
-             <h3>{act.Name}</h3>
+             <h3>{act.name}</h3>
         </Link>
         })
 }

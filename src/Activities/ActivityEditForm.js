@@ -2,8 +2,9 @@ import React, { useContext, useEffect, useState } from "react"
 import {ActivityContext} from"./Activitydataprovider"
 import "./Activity.css"
 
+   // Use the required context providers for data
 export const ActivityEditForm = (props) =>{
-    const{activities,getActivity,updateActivity,addActivity} = useContext(ActivityContext)
+    const{activities,getActivity,updateActivity} = useContext(ActivityContext)
 
 const[Activity,setActivity] = useState({})
 
@@ -16,12 +17,12 @@ setActivity(newActivity)
 }
 
 const getActivityInEditMode = () => {
-    if (editMode) {
+    
         const activityId = parseInt(props.match.params.activityId)
         const selectedActivity = activities.find(a => a.id === activityId) || {}
         setActivity(selectedActivity)
     }
-}
+
 
 useEffect(() =>{
     console.log(props.match.params)
@@ -35,66 +36,66 @@ useEffect(() =>{
 const constructNewActivity = () => {
     const activityId = parseInt(props.match.params.activityId)
     if(activityId === 0){
-        window.alert("please select a Name,Type,Time Limit and Rewards Points")
+        window.alert("please select a Name,Type,Time Limit and Rewards Points" )
     }else{
-        if(editMode){
-            updateActivity({
-                Name : Activity.Name,
-                Type : Activity.Type,
-                Time : Activity.Time,
-                Rewards:Activity.Rewards,
-                activityId:activityId
-                // kidsId:kidsId
+      updateActivity({
+        name : Activity.name,
+        activityTypeId : Activity.activityTypeId,
+        timeLimit : Activity.timeLimit,
+        rewardPoints:Activity.rewardPoints,
+        id:Activity.id,
+        userId:Activity.userId,
+        date:Activity.Activitydate,
+        isCompleted:Activity.isCompleted
         })
-        .then(() => props.history.push("/activities"))
-        }else{
-            addActivity({
-                Name : Activity.Name,
-                Type : Activity.Type,
-                Time : Activity.Time,
-                Rewards:Activity.Rewards,
-                activityId:activityId
-
-            })
-            .then(() => props.history.push("/activities"))
-        }}
+        .then(() => props.history.push("/"))
+        }
     }
+    
     return (
         <form className="ActivityForm">
-                    <h2 className="ActivityForm__title">{editMode ? "Update Activity" : "Add Activity"}</h2>
+                    <h2 className="ActivityForm__title">"Update Activity"</h2>
                     <fieldset>
                         <div className="form-group">
-                            <label htmlFor="activityName">Activity Name: </label>
-                            <input type="text" id="activityName"  required autoFocus className="form-control" placeholder="Activity name"
-                            onChange={handleControlledInputChange}/>
+                            <label htmlFor="name">Activity Name: </label>
+                            <input type="text" name="name" id ="name" required autoFocus className="form-control" placeholder="Activity name"
+                                value={Activity.name} onChange={handleControlledInputChange}/>
                         </div>
                     </fieldset>
+
+                 <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="activityName">Activity Date: </label>
+                        <input type="date" name="date" id="date" className="form-control" 
+                         placeholder="Activity Date" value={Activity.Activitydate} onChange={handleControlledInputChange}/>
+                    </div>
+                </fieldset>
             
-                    <fieldset>
+                <fieldset>
                         <div className="form-group">
-                        <label htmlFor="age">Activity Type: </label>
-                        <select defaultValue="" name="age"  id="employeeLocation" className="form-control" 
-                        onChange={handleControlledInputChange}>
-                        <option value="1">Select Activity Type</option>
-                        <option value="Chores">Chores</option>
-                        <option value="Classes">Classes</option>
-                        <option value="Special Events">Special Events</option>
+                        <label htmlFor="type">Activity Type: </label>
+                        <select defaultValue="" name="activityTypeId"  id="activityTypeId" className="form-control" 
+                          value={Activity.activityTypeId} onChange={handleControlledInputChange}>
+                        <option value="0">Select Activity Type</option>
+                        <option value="1">Chores</option>
+                        <option value="2">Classes</option>
+                        <option value="3">Special Events</option>
                         </select>
                         </div>
                         </fieldset>
                 
                         <fieldset>
                         <div className="form-group">
-                        <label htmlFor="age">Time Limit: </label>
-                        <select defaultValue="" name="age" id="employeeLocation" className="form-control"
-                        onChange={handleControlledInputChange} >
-                        <option value="1">Select Time Limit</option>
-                        <option value="15 mins">15 mins</option>
-                        <option value="30 mins">30 mins</option>
-                        <option value="45 mins">45 mins</option>
-                        <option value="60 mins(1 hr)">60 mins(1 hr)</option>
-                        <option value=" 90 mins"> 90 mins</option>
-                        <option value=" 120 mins(2 hr)"> 120 mins(2 hr)</option>
+                        <label htmlFor="time">Time Limit: </label>
+                        <select defaultValue="" name="timeLimit"  id="timeLimit" className="form-control"
+                          value={Activity.timeLimit} onChange={handleControlledInputChange}>
+                        <option value="0">Select Time Limit</option>
+                        <option value="1">15 mins</option>
+                        <option value="2">30 mins</option>
+                        <option value="3">45 mins</option>
+                        <option value="4">60 mins(1 hr)</option>
+                        <option value="5"> 90 mins</option>
+                        <option value="6"> 120 mins(2 hr)</option>
                         </select>
                         </div>
                         </fieldset>
@@ -102,13 +103,13 @@ const constructNewActivity = () => {
                         <fieldset>
                 <div className="form-group">
                 <label htmlFor="age">RewardPoints: </label>
-                <select defaultValue="" name="age" id="employeeLocation" className="form-control"
-                  onChange={handleControlledInputChange} >
-                <option value="1">Reward Points</option>
-                <option value="25 pts">25 pts</option>
-                <option value="50 pts">50 pts</option>
-                <option value="75 pts">75 pts</option>
-                <option value="100 pts">100 pts</option>
+                <select defaultValue="" name="rewardPoints" id="rewardPoints" className="form-control"
+                  value ={Activity.rewardPoints} onChange={handleControlledInputChange} >
+                <option value="0">Reward Points</option>
+                <option value="1">25 pts</option>
+                <option value="2">50 pts</option>
+                <option value="3">75 pts</option>
+                <option value="4">100 pts</option>
                 </select>
                 </div>
                 </fieldset>
@@ -119,9 +120,8 @@ const constructNewActivity = () => {
                     constructNewActivity()
                 }}
                 className="btn btn-primary">
-                    {editMode ? "Save Activity" : "Add Activity"}
-                
-            </button>
+                     Save Activity
+                </button>
                 </form>
 )
 }

@@ -26,10 +26,12 @@ console.log(activities)
     return(
         <> 
         <section className="activity">
-            <h3 className="activity__name">Name: {Activity.Name}</h3>
-            <h3 className="Activity__type">Activity Type: {Activity.Type}</h3>
-            <h3 className="Activity__time">Time limit: {Activity.Time}</h3>
-            <h3 className="Activity__rewards">Reward points: {Activity.Rewards}</h3>
+            <h3 className="activity__name">Name: {Activity.name}</h3>
+            <h3 className="activity__date">Date: {Activity.date}</h3>
+            <h3 className="activity__completed">IsCompleted: {Activity.isCompleted ? "true" : "false"}</h3>
+            <h3 className="Activity__type">Activity Type: {Activity.activityTypeId}</h3>
+            <h3 className="Activity__time">Time limit: {Activity.timeLimit}</h3>
+            <h3 className="Activity__rewards">Reward points: {Activity.rewardPoints}</h3>
         </section>
         
 {/* code to delete the activity */}
@@ -44,7 +46,7 @@ console.log(activities)
 {/* code to edit the activity */}
 
 <button onClick={() => {
-    props.history.push(`/activities/edit/${props.match.params.activityId}`)
+    props.history.push(`/activities/edit/${Activity.id}`)
     }}>Edit Activity</button>
 </>
     )}

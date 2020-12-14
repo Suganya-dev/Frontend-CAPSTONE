@@ -127,76 +127,34 @@
   ],
   "activities": [
     {
-      "Name": "Swimming",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "50 pts",
-      "kidsId": 24,
-      "id": 4
+      "name": "Swimming",
+      "activityTypeId": "2",
+      "timeLimit": "3",
+      "rewardPoints": "3",
+      "userId": 24,
+      "isCompleted": false,
+      "date": "2020-12-17",
+      "id": 12
     },
     {
-      "Name": "Swimming",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "50 pts",
-      "kidsId": null,
-      "id": 5
-    },
-    {
-      "Name": "Swimming",
-      "Type": "Classes",
-      "Time": "60 mins(1 hr)",
-      "Rewards": "75 pts",
-      "kidsId": null,
-      "id": 6
-    },
-    {
-      "Name": "Soccer class",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "50 pts",
-      "kidsId": null,
-      "id": 7
-    },
-    {
-      "Name": "Clean up your space",
-      "Type": "Chores",
-      "Time": "30 mins",
-      "Rewards": "50 pts",
-      "kidsId": 26,
-      "id": 9
-    },
-    {
-      "Name": "Singing",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "50 pts",
-      "kidsId": 25,
-      "id": 10
-    },
-    {
-      "Name": "Piano class",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "75 pts",
-      "kidsId": 27,
+      "name": "Fold your clothes",
+      "activityTypeId": "1",
+      "timeLimit": "2",
+      "rewardPoints": "1",
+      "userId": 26,
+      "isCompleted": false,
+      "date": "2020-12-18",
       "id": 13
     },
     {
-      "Name": "Soccer class",
-      "Type": "Classes",
-      "Time": "45 mins",
-      "Rewards": "50 pts",
-      "kidsId": 28,
+      "name": "Clean up your playarea",
+      "activityTypeId": "1",
+      "timeLimit": "2",
+      "rewardPoints": "2",
+      "userId": 22,
+      "isCompleted": false,
+      "date": "2020-12-24",
       "id": 14
-    },
-    {
-      "Name": "Piano class",
-      "Type": "Classes",
-      "Time": "30 mins",
-      "Rewards": "50 pts",
-      "kidsId": 22,
-      "id": 15
     }
   ]
 }

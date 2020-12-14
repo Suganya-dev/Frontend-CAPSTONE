@@ -10,12 +10,9 @@ export const Activityform = (props) =>{
     const Type = useRef(null)
     const Time = useRef(null)
     const Rewards = useRef(null)
+    const Date = useRef(null)
 
-//    // Component state
-//    const [Activity, setActivity] = useState({})
 
-    // // Is there a a URL parameter??
-    // const editMode = props.match.params.hasOwnProperty("animalId")
 
     useEffect(() =>{
         getActivity()
@@ -26,6 +23,7 @@ export const Activityform = (props) =>{
         const ActivityType = Type.current.value
         const TimeLimit = Time.current.value
         const RewardPoints = Rewards.current.value
+        const Activitydate = Date.current.value
        const kidsId = parseInt(props.match.params.kidsId)
     
         if(ActivityName === "" || ActivityType === "" || TimeLimit ==="" ||
@@ -33,11 +31,13 @@ export const Activityform = (props) =>{
             window.alert("please select a Name,Type,Time Limit and Rewards Points")
         }else{
             addActivity({
-                Name : ActivityName,
-                Type : ActivityType,
-                Time : TimeLimit,
-                Rewards:RewardPoints,
-                kidsId:kidsId
+                name : ActivityName,
+                activityTypeId : ActivityType,
+                timeLimit : TimeLimit,
+                rewardPoints:RewardPoints,
+                userId:kidsId,
+                isCompleted:false,
+                date:Activitydate
             })
             .then(() => props.history.push("/"))
         }
@@ -51,42 +51,50 @@ export const Activityform = (props) =>{
                             <input type="text" id="activityName" ref={Name} required autoFocus className="form-control" placeholder="Activity name" />
                         </div>
                     </fieldset>
+
                     <fieldset>
                         <div className="form-group">
-                        <label htmlFor="age">Activity Type: </label>
-                        <select defaultValue="" name="age" ref={Type} id="activityLocation" className="form-control" >
-                        <option value="1">Select Activity Type</option>
-                        <option value="Chores">Chores</option>
-                        <option value="Classes">Classes</option>
-                        <option value="Special Events">Special Events</option>
+                            <label htmlFor="activityName">Activity Date: </label>
+                            <input type="date" id="activityDate" ref={Date} className="form-control" placeholder="Activity Date" />
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <div className="form-group">
+                        <label htmlFor="type">Activity Type: </label>
+                        <select defaultValue="" name="type" ref={Type} id="activityType" className="form-control" >
+                        <option value="0">Select Activity Type</option>
+                        <option value="1">Chores</option>
+                        <option value="2">Classes</option>
+                        <option value="3">Special Events</option>
                         </select>
                         </div>
                         </fieldset>
         
                         <fieldset>
                         <div className="form-group">
-                        <label htmlFor="age">Time Limit: </label>
-                        <select defaultValue="" name="age" ref={Time} id="activityTime" className="form-control" >
-                        <option value="1">Select Time Limit</option>
-                        <option value="15 mins">15 mins</option>
-                        <option value="30 mins">30 mins</option>
-                        <option value="45 mins">45 mins</option>
-                        <option value="60 mins(1 hr)">60 mins(1 hr)</option>
-                        <option value=" 90 mins"> 90 mins</option>
-                        <option value=" 120 mins(2 hr)"> 120 mins(2 hr)</option>
+                        <label htmlFor="time">Time Limit: </label>
+                        <select defaultValue="" name="time" ref={Time} id="activityTime" className="form-control" >
+                        <option value="0">Select Time Limit</option>
+                        <option value="1">15 mins</option>
+                        <option value="2">30 mins</option>
+                        <option value="3">45 mins</option>
+                        <option value="4">60 mins(1 hr)</option>
+                        <option value="5"> 90 mins</option>
+                        <option value="6"> 120 mins(2 hr)</option>
                         </select>
                         </div>
                         </fieldset>
                         
                 <fieldset>
                 <div className="form-group">
-                <label htmlFor="age">RewardPoints: </label>
-                <select defaultValue="" name="age" ref={Rewards} id="activitypoints" className="form-control" >
-                <option value="1">Reward Points</option>
-                <option value="25 pts">25 pts</option>
-                <option value="50 pts">50 pts</option>
-                <option value="75 pts">75 pts</option>
-                <option value="100 pts">100 pts</option>
+                <label htmlFor="rewards">RewardPoints: </label>
+                <select defaultValue="" name="rewards" ref={Rewards} id="activitypoints" className="form-control" >
+                <option value="0">Reward Points</option>
+                <option value="1">25 pts</option>
+                <option value="2">50 pts</option>
+                <option value="3">75 pts</option>
+                <option value="4">100 pts</option>
                 </select>
                 </div>
                 </fieldset>
