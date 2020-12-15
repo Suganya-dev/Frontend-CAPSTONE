@@ -1,6 +1,7 @@
 import React,{useContext, useEffect,useState} from "react"
 import {userContext} from "../parents/ParentsDataprovider"
 import { Link } from "react-router-dom"
+import "./Kids.css"
 
 export const KidsDashBoard = (props) =>{
     const{users, getUsers} = useContext(userContext)

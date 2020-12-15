@@ -9,6 +9,7 @@ import {ActivityTypeProvider} from "./ActivityType/ActivityTypeProvider"
 import {ActivityDetail} from "./Activities/Activitydetail"
 import {ActivityEditForm} from "./Activities/ActivityEditForm"
 import {KidsDashBoard} from "./KidsDashBoard/KidsDashBoard"
+import {KidsDetail} from "./KidsDashBoard/KidsDetail"
 
 export const ApplicationViews = (props) =>{
     return (
@@ -45,6 +46,10 @@ export const ApplicationViews = (props) =>{
             <Route exact path="/users">
             <KidsDashBoard {...props}/>
                 </Route> 
+
+         <Route path="/users/:userId(\d+)" render={
+         props => <KidsDetail {...props} />
+            } />
                 </ActivityProvider>
                 </Userprovider>
             

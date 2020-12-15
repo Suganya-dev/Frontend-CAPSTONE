@@ -57,10 +57,11 @@ const constructNewActivity = () => {
         date:Activity.Activitydate,
         isCompleted:Activity.isCompleted
         })
+        
         .then(() => props.history.push("/"))
         }
     }
-    
+   
     return (
         <form className="ActivityForm">
                     <h2 className="ActivityForm__title">"Update Activity"</h2>
@@ -75,7 +76,7 @@ const constructNewActivity = () => {
                  <fieldset>
                     <div className="form-group">
                         <label htmlFor="activityName">Activity Date: </label>
-                        <input type="date" name="date" id="date" className="form-control" 
+                        <input type="date" name="Activitydate" id="Activitydate" className="form-control" 
                          placeholder="Activity Date" value={Activity.Activitydate} onChange={handleControlledInputChange}/>
                     </div>
                 </fieldset>

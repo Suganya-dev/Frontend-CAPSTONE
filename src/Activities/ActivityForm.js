@@ -20,7 +20,7 @@ export const Activityform = (props) =>{
 
     const ConstructNewActivity = () =>{
         const ActivityName = Name.current.value
-        const ActivityType = Type.current.value
+        const ActivityType = parseInt(Type.current.value)
         const TimeLimit = Time.current.value
         const RewardPoints = Rewards.current.value
         const Activitydate = Date.current.value
