@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react"
 import {ActivityContext} from"./Activitydataprovider"
-import {ActivityTypeContext} from "./ActivityType/ActivityTypeProvider"
+import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
 import "./Activity.css"
 
    // Use the required context providers for data
 export const ActivityEditForm = (props) =>{
     const{activities,getActivity,updateActivity} = useContext(ActivityContext)
-    const{ActivityTypes,getActivityType,addActivityType}=useContext(ActivityTypeContext)
+    const{ActivityTypes,getActivityType} = useContext(ActivityTypeContext)
 
 const[Activity,setActivity] = useState({})
 
@@ -30,6 +30,11 @@ useEffect(() =>{
     console.log(props.match.params)
     getActivity()
 },[])
+
+// useEffect(() =>{
+//     // console.log(props.match.params)
+//     getActivityType()
+// },[])
 
 useEffect(() =>{
     getActivityInEditMode()
@@ -77,17 +82,17 @@ const constructNewActivity = () => {
                         <div className="form-group">
                         <label htmlFor="type">Activity Type: </label>
                         <select defaultValue="" name="activityTypeId"  id="activityTypeId" className="form-control" 
-                          value={Activity.activityTypeId} onChange={handleControlledInputChange}>
+                          onChange={handleControlledInputChange}>
 
-                         <option value="0"> Select Activity Type</option>
-                         {ActivityTypes.map(a =>(
-                             <option key={a.id} value={a.id}>
-                                {a.name}
-                             </option>
-                         ))}
+                        <option value="0">Select Activity Type</option>
+                        {ActivityTypes.map(a => (
+                          <option key={a.id} value={a.id}>
+                              {a.name}
+                          </option>
+                        ))}
                         </select>
                         </div>
-                </fieldset>
+                        </fieldset>
                 
                         <fieldset>
                         <div className="form-group">

@@ -3,7 +3,7 @@ import React,{useState} from "react"
 export const ActivityTypeContext = React.createContext()
 
 export const ActivityTypeProvider = (props) => {
-    const[ActivityTypes,setActivityType] = useState()
+    const[ActivityTypes,setActivityType] = useState([])
 
  const getActivityType = () =>{
  return fetch("http://localhost:8088/activityTypes")
@@ -11,7 +11,7 @@ export const ActivityTypeProvider = (props) => {
  .then(setActivityType)
  }
 
- const addActivityType = (activityTypes) =>{
+ const addActivityType = activityTypes =>{
      return fetch("http://localhost:8088/activityTypes",{
          method:"POST",
          headers:{

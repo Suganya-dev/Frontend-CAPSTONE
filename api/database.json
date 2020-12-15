@@ -127,16 +127,6 @@
   ],
   "activities": [
     {
-      "name": "Swimming",
-      "activityTypeId": "2",
-      "timeLimit": "3",
-      "rewardPoints": "3",
-      "userId": 24,
-      "isCompleted": false,
-      "date": "2020-12-17",
-      "id": 12
-    },
-    {
       "name": "Fold your clothes",
       "activityTypeId": "1",
       "timeLimit": "2",
@@ -157,7 +147,18 @@
       "id": 14
     }
   ],
-  "activityTypes":[
-    
+  "activityTypes": [
+    {
+      "id": 1,
+      "name": "Classes"
+    },
+    {
+      "id": 2,
+      "name": "Chores"
+    },
+    {
+      "id": 3,
+      "name": "Special Events"
+    }
   ]
 }
