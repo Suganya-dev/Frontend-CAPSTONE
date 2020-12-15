@@ -6,8 +6,8 @@ import "./Activity.css"
    // Use the required context providers for data
 export const ActivityEditForm = (props) =>{
     const{activities,getActivity,updateActivity} = useContext(ActivityContext)
-    const{ActivityTypes,getActivityType} = useContext(ActivityTypeContext)
-
+    const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    //  console.log(activityTypes)
 const[Activity,setActivity] = useState({})
 
 const editMode = props.match.params.hasOwnProperty("activityId")
@@ -26,15 +26,17 @@ const getActivityInEditMode = () => {
     }
 
 
-useEffect(() =>{
-    console.log(props.match.params)
-    getActivity()
-},[])
-
 // useEffect(() =>{
-//     // console.log(props.match.params)
-//     getActivityType()
+//     console.log(props.match.params)
+//     getActivity()
+    
 // },[])
+
+useEffect(() =>{
+    // console.log(props.match.params)
+    getActivityType()
+    .then(getActivity)
+},[])
 
 useEffect(() =>{
     getActivityInEditMode()
@@ -85,7 +87,7 @@ const constructNewActivity = () => {
                           onChange={handleControlledInputChange}>
 
                         <option value="0">Select Activity Type</option>
-                        {ActivityTypes.map(a => (
+                        {activityTypes.map(a => (
                           <option key={a.id} value={a.id}>
                               {a.name}
                           </option>

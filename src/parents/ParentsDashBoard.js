@@ -30,7 +30,8 @@ export const ParentsDashboard =(props) =>{
             </button>
         {
         kids.map(kid=>{
-        return <Kidcard key={kid.id} kiduser={kid}{... props} />})
+        return(
+             <Kidcard key={kid.id} kiduser={kid}{... props} />)})
     }
 </>
   )}

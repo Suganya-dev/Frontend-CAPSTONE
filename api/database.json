@@ -123,6 +123,14 @@
       "dob": "2020-12-16",
       "parentId": 1,
       "id": 28
+    },
+    {
+      "name": "Dev",
+      "email": "suganprakash0621@gmail.com",
+      "password": "sbdvghsfh",
+      "dob": "2020-12-03",
+      "parentId": 1,
+      "id": 29
     }
   ],
   "activities": [
@@ -137,14 +145,31 @@
       "id": 13
     },
     {
-      "name": "Clean up your playarea",
+      "name": "Clean up your playarea  and dining",
+      "activityTypeId": "2",
+      "timeLimit": "1",
+      "rewardPoints": "1",
+      "id": 14,
+      "userId": 22,
+      "isCompleted": false
+    },
+    {
+      "name": "Math and science111",
       "activityTypeId": "1",
       "timeLimit": "2",
-      "rewardPoints": "2",
-      "userId": 22,
-      "isCompleted": false,
-      "date": "2020-12-24",
-      "id": 14
+      "rewardPoints": "4",
+      "id": 15,
+      "userId": 27,
+      "isCompleted": false
+    },
+    {
+      "name": "Clean up your playarea11",
+      "activityTypeId": "1",
+      "timeLimit": "3",
+      "rewardPoints": "3",
+      "id": 16,
+      "userId": 24,
+      "isCompleted": false
     }
   ],
   "activityTypes": [

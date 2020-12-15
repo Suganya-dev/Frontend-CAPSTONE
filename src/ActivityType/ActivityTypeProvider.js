@@ -1,33 +1,34 @@
 import React,{useState} from "react"
-
 export const ActivityTypeContext = React.createContext()
 
 export const ActivityTypeProvider = (props) => {
-    const[ActivityTypes,setActivityType] = useState([])
+    const[activityTypes,setactivityTypes] = useState([])
 
  const getActivityType = () =>{
  return fetch("http://localhost:8088/activityTypes")
  .then(res => res.json())
- .then(setActivityType)
+ .then(setactivityTypes)
  }
 
- const addActivityType = activityTypes =>{
+ const addActivityType = activityType =>{
      return fetch("http://localhost:8088/activityTypes",{
          method:"POST",
          headers:{
             "Content-Type": "application/json"
          },
-         body: JSON.stringify(activityTypes)
+         body: JSON.stringify(activityType)
      })
      .then(getActivityType)
  }
 
  return(
-     <ActivityTypeContext.provider value = {
+ 
+     <ActivityTypeContext.Provider value ={
          {
-            ActivityTypes, getActivityType,addActivityType 
+            activityTypes, getActivityType,addActivityType 
          }}>
              {props.children}
-     </ActivityTypeContext.provider>
+     </ActivityTypeContext.Provider>
+     
  )
 }
