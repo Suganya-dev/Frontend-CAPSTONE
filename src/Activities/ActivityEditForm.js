@@ -1,11 +1,13 @@
 import React, { useContext, useEffect, useState } from "react"
 import {ActivityContext} from"./Activitydataprovider"
+import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
 import "./Activity.css"
 
    // Use the required context providers for data
 export const ActivityEditForm = (props) =>{
     const{activities,getActivity,updateActivity} = useContext(ActivityContext)
-
+    const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    //  console.log(activityTypes)
 const[Activity,setActivity] = useState({})
 
 const editMode = props.match.params.hasOwnProperty("activityId")
@@ -24,9 +26,16 @@ const getActivityInEditMode = () => {
     }
 
 
+// useEffect(() =>{
+//     console.log(props.match.params)
+//     getActivity()
+    
+// },[])
+
 useEffect(() =>{
-    console.log(props.match.params)
-    getActivity()
+    // console.log(props.match.params)
+    getActivityType()
+    .then(getActivity)
 },[])
 
 useEffect(() =>{
@@ -48,10 +57,11 @@ const constructNewActivity = () => {
         date:Activity.Activitydate,
         isCompleted:Activity.isCompleted
         })
+        
         .then(() => props.history.push("/"))
         }
     }
-    
+   
     return (
         <form className="ActivityForm">
                     <h2 className="ActivityForm__title">"Update Activity"</h2>
@@ -66,7 +76,7 @@ const constructNewActivity = () => {
                  <fieldset>
                     <div className="form-group">
                         <label htmlFor="activityName">Activity Date: </label>
-                        <input type="date" name="date" id="date" className="form-control" 
+                        <input type="date" name="Activitydate" id="Activitydate" className="form-control" 
                          placeholder="Activity Date" value={Activity.Activitydate} onChange={handleControlledInputChange}/>
                     </div>
                 </fieldset>
@@ -75,11 +85,14 @@ const constructNewActivity = () => {
                         <div className="form-group">
                         <label htmlFor="type">Activity Type: </label>
                         <select defaultValue="" name="activityTypeId"  id="activityTypeId" className="form-control" 
-                          value={Activity.activityTypeId} onChange={handleControlledInputChange}>
+                          onChange={handleControlledInputChange}>
+
                         <option value="0">Select Activity Type</option>
-                        <option value="1">Chores</option>
-                        <option value="2">Classes</option>
-                        <option value="3">Special Events</option>
+                        {activityTypes.map(a => (
+                          <option key={a.id} value={a.id}>
+                              {a.name}
+                          </option>
+                        ))}
                         </select>
                         </div>
                         </fieldset>

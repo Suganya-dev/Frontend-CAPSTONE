@@ -6,7 +6,7 @@ import {Kidcard} from "./Kidcard"
 
 export const ParentsDashboard =(props) =>{
     const{users, getUsers} = useContext(userContext);
-    const[parent,setParent] = useState()
+    const[parent,setParent] = useState([])
     const[kids,setkids]=useState([])
 
  useEffect(() =>{
@@ -30,7 +30,8 @@ export const ParentsDashboard =(props) =>{
             </button>
         {
         kids.map(kid=>{
-        return <Kidcard key={kid.id} kiduser={kid}{... props} />})
+        return(
+             <Kidcard key={kid.id} kiduser={kid}{... props} />)})
     }
 </>
   )}

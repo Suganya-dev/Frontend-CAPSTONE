@@ -123,22 +123,20 @@
       "dob": "2020-12-16",
       "parentId": 1,
       "id": 28
+    },
+    {
+      "name": "Dev",
+      "email": "suganprakash0621@gmail.com",
+      "password": "sbdvghsfh",
+      "dob": "2020-12-03",
+      "parentId": 1,
+      "id": 29
     }
   ],
   "activities": [
     {
-      "name": "Swimming",
-      "activityTypeId": "2",
-      "timeLimit": "3",
-      "rewardPoints": "3",
-      "userId": 24,
-      "isCompleted": false,
-      "date": "2020-12-17",
-      "id": 12
-    },
-    {
       "name": "Fold your clothes",
-      "activityTypeId": "1",
+      "activityTypeId": 1,
       "timeLimit": "2",
       "rewardPoints": "1",
       "userId": 26,
@@ -147,14 +145,69 @@
       "id": 13
     },
     {
-      "name": "Clean up your playarea",
-      "activityTypeId": "1",
-      "timeLimit": "2",
+      "name": "Clean up your playarea , study and dining",
+      "activityTypeId": 2,
+      "timeLimit": "1",
       "rewardPoints": "2",
+      "id": 14,
       "userId": 22,
+      "date": "2020-12-30",
+      "isCompleted": false
+    },
+    
+    {
+      "name": "Fold your clothes",
+      "activityTypeId": 1,
+      "timeLimit": "1",
+      "rewardPoints": "1",
+      "userId": 28,
       "isCompleted": false,
-      "date": "2020-12-24",
-      "id": 14
+      "date": "2020-12-25",
+      "id": 17
+    },
+    {
+      "name": "Soccer class",
+      "activityTypeId": 2,
+      "timeLimit": "1",
+      "rewardPoints": "2",
+      "userId": 24,
+      "isCompleted": false,
+      "date": "2020-12-30",
+      "id": 18
+    },
+    {
+      "name": "guitar Class",
+      "activityTypeId": 2,
+      "timeLimit": "4",
+      "rewardPoints": "2",
+      "userId": 24,
+      "isCompleted": false,
+      "date": "2020-12-09",
+      "id": 19
+    },
+    {
+      "name": "Swimming",
+      "activityTypeId": 2,
+      "timeLimit": "4",
+      "rewardPoints": "3",
+      "userId": 26,
+      "isCompleted": false,
+      "date": "2020-12-11",
+      "id": 20
+    }
+  ],
+  "activityTypes": [
+    {
+      "id": 1,
+      "name": "Classes"
+    },
+    {
+      "id": 2,
+      "name": "Chores"
+    },
+    {
+      "id": 3,
+      "name": "Special Events"
     }
   ]
 }
