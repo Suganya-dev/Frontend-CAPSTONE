@@ -1,5 +1,6 @@
 import React,{useEffect,useContext, useState} from "react"
 import {userContext} from "./ParentsDataprovider"
+import Button from 'react-bootstrap/Button';
 
 import {Kidcard} from "./Kidcard"
 
@@ -25,9 +26,9 @@ export const ParentsDashboard =(props) =>{
   return(
         <>
         {parent? parent.name : "no-parent"}
-        <button onClick={() => props.history.push("/kids/create")}>
+        <Button onClick={() => props.history.push("/kids/create")}>
              Add New Child
-            </button>
+            </Button>
         {
         kids.map(kid=>{
         return(

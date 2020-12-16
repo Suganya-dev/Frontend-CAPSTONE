@@ -31,3 +31,5 @@ const addRewardPoints = (rewardPoints) =>{
             </RewardTypeContext.Provider>
             </>
     )}
+
+    // {RewardPoints ? RewardPoints.points : ""}

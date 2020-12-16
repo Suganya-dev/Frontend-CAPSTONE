@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useEffect } from "react"
 import { ActivityContext } from "./Activitydataprovider"
 import "./Activity.css"
+import Button from 'react-bootstrap/Button'
 
 //   // Use the required context providers for data
 export const Activityform = (props) =>{
@@ -99,14 +100,14 @@ export const Activityform = (props) =>{
                 </div>
                 </fieldset>
 
-                <button type="submit"
+                <Button type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     ConstructNewActivity()
                 }}
                 className="btn btn-primary">
                 Save Activity
-            </button>
+            </Button>
                 </form>
 )
 }

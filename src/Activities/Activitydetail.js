@@ -2,25 +2,26 @@ import React, { useState, useEffect, useContext } from "react"
 import {ActivityContext} from "./Activitydataprovider"
 import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
 import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
+import Button from 'react-bootstrap/Button'
 import "./Activity.css"
 
 // importing datas using usecontext
 export const ActivityDetail = (props) =>{
     const{activities,getActivity,releaseActivity} = useContext(ActivityContext)
     const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
-    const{rewards,getRewardPoints} = useContext(RewardTypeContext)
+    const{rewardTypes,getRewardTypes} = useContext(RewardTypeContext)
 
 // using statevariable for state change
 // whenever URL(state) changes useState helps to start render and gets data
 
     const[Activity,setActivity] = useState({})
     const[ActivityType,setActivityType]=useState({})
-    const[Rewards,setRewards]=useState({})
+    const[RewardPoints,setRewardPoints]=useState({})
 
     useEffect(() => {
         getActivity()
         .then(getActivityType)
-        .then(getRewardPoints)
+        .then(getRewardTypes)
     },[])
 //  For finding the Activity name
     useEffect(() => {
@@ -39,11 +40,11 @@ console.log(activities)
  },[activityTypes])
 
 //  For getting the Rewards points(not id) in the detail window 
-// useEffect(() =>{
-//     const findRewards = rewards.find(r => r.id === Activity.rewardPoints)
-//     setRewards(findRewards)
-//     console.log(findRewards)
-// },[rewards])
+useEffect(() =>{
+    const findRewards = rewardTypes.find(r => r.id === Activity.rewardTypeId)
+    setRewardPoints(findRewards)
+    console.log(findRewards)
+},[rewardTypes])
  
     return(
         <> 
@@ -53,22 +54,22 @@ console.log(activities)
             <h3 className="activity__completed">IsCompleted: {Activity.isCompleted ? "true" : "false"}</h3>
             <h3 className="Activity__type">Activity Type: {ActivityType ? ActivityType.name : ""}</h3>
             <h3 className="Activity__time">Time limit: {Activity.timeLimit}</h3>
-            <h3 className="Activity__rewards">Reward points: {Activity.rewardPoints}</h3>
+            <h3 className="Activity__rewards">Reward points: {RewardPoints ? RewardPoints.points : ""}</h3>
         </section>
         
 {/* code to delete the activity */}
-        <button className="btn--release"
+        <Button className="btn--release"
         onClick={() => {
             releaseActivity(props.match.params.activityId)
                 .then(() => {
                     props.history.push("/")
                 })
         }}
->Delete Activity</button>
+>Delete Activity</Button>
 {/* code to edit the activity */}
 
-<button onClick={() => {
+<Button onClick={() => {
     props.history.push(`/activities/edit/${Activity.id}`)
-    }}>Edit Activity</button>
+    }}>Edit Activity</Button>
 </>
     )}

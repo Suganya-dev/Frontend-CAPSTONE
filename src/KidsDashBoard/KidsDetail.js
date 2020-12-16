@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from "react"
 import {ActivityContext} from "../Activities/Activitydataprovider"
 import {userContext} from "../parents/ParentsDataprovider"
 import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
+import {ActivityCard} from "../Activities/Activity"
+import Button from 'react-bootstrap/Button'
 import "../Activities/Activity.css"
 import "./Kids.css"
 
@@ -37,13 +39,14 @@ export const KidsDetail =(props) => {
     },[users])
 // Finding the activitytype name in the detail window form
 
-useEffect(() => {
-    const findActivityType = activityTypes.find(t => t.id === Activity.activityTypeId) || {}
-    setActivityType(findActivityType)
-    console.log(findActivityType)
-   },[activityTypes])
+// useEffect(() => {
+//     const findActivityType = activityTypes.find(t => t.id === Activity.activityTypeId) || {}
+//     setActivityType(findActivityType)
+//     // console.log("activitytype",activityTypes,"activities",Activity)
+//     console.log(Activity.activityTypeId)
+//    },[activityTypes])
 
-// console.log(Activity.activityTypeId)
+// CREATE a function completeACtivity & isComplete
 console.log(activityTypes)
 // used mapping when the kids have more than one activity.
   return(
@@ -51,27 +54,28 @@ console.log(activityTypes)
       
     <h2 className="kiduser__name">Name:{kidusers.name}</h2>
        {
-            Activity.map(a =>   
-             <section className = "activity">
+            Activity.map(a =>  {
+                const findActivityType = activityTypes.find(t => t.id === a.activityTypeId) || {}
+             return <section className = "activity">
              <h3 className="activity__name">Activity Name: {a.name}</h3>
             <h3 className="activity__date">Date: {a.date}</h3>
-            <h3 className="activity__type">Activity Type: {ActivityType ? ActivityType.name: ""}</h3>
+            <h3 className="activity__type">Activity Type: {findActivityType ? findActivityType.name: ""}</h3>
             <h3 className="activity__time">Time limit: {a.timeLimit}</h3>
             <h3 className="activity__rewards">Reward points: {a.rewardPoints}</h3>
                
 
-   <button onClick={() => {
+   <Button onClick={() => {
     props.history.push("/users")}}
-    > Completed Activity </button>
-    </section>)
+    > Completed Activity </Button>
+    </section>})
 }
-   {/* {
-       Activity.map(act =>{
-           return key={act.id} to={`/users/${act.id}`}>
-             <h3> {act.name} </h3>
-            
-       })
-   } */}
-   </>
+   {
+       Activity.map(act =>{ 
+           if (act.isCompleted){
+               return(
+        <ActivityCard key={act.id} Activity ={act} to={"/users"} />)}})
+
+           }
+         </>
   )}
 
