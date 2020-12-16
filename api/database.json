@@ -138,7 +138,7 @@
       "name": "Fold your clothes",
       "activityTypeId": 1,
       "timeLimit": "2",
-      "rewardPoints": "1",
+      "rewardPoints": 1,
       "userId": 26,
       "isCompleted": false,
       "date": "2020-12-18",
@@ -148,18 +148,17 @@
       "name": "Clean up your playarea , study and dining",
       "activityTypeId": 2,
       "timeLimit": "1",
-      "rewardPoints": "2",
+      "rewardPoints": 2,
       "id": 14,
       "userId": 22,
       "date": "2020-12-30",
       "isCompleted": false
     },
-    
     {
       "name": "Fold your clothes",
       "activityTypeId": 1,
       "timeLimit": "1",
-      "rewardPoints": "1",
+      "rewardPoints": 1,
       "userId": 28,
       "isCompleted": false,
       "date": "2020-12-25",
@@ -169,7 +168,7 @@
       "name": "Soccer class",
       "activityTypeId": 2,
       "timeLimit": "1",
-      "rewardPoints": "2",
+      "rewardPoints": 2,
       "userId": 24,
       "isCompleted": false,
       "date": "2020-12-30",
@@ -179,7 +178,7 @@
       "name": "guitar Class",
       "activityTypeId": 2,
       "timeLimit": "4",
-      "rewardPoints": "2",
+      "rewardPoints": 2,
       "userId": 24,
       "isCompleted": false,
       "date": "2020-12-09",
@@ -189,11 +188,21 @@
       "name": "Swimming",
       "activityTypeId": 2,
       "timeLimit": "4",
-      "rewardPoints": "3",
+      "rewardPoints": 3,
       "userId": 26,
       "isCompleted": false,
       "date": "2020-12-11",
       "id": 20
+    },
+    {
+      "name": "Math and science",
+      "activityTypeId": 2,
+      "timeLimit": "5",
+      "rewardPoints": 3,
+      "userId": 27,
+      "isCompleted": false,
+      "date": "2020-12-30",
+      "id": 21
     }
   ],
   "activityTypes": [
@@ -208,6 +217,24 @@
     {
       "id": 3,
       "name": "Special Events"
+    }
+  ],
+  "rewards": [
+    {
+      "id": 1,
+      "points": "100pts"
+    },
+    {
+      "id": 2,
+      "points": "75pts"
+    },
+    {
+      "id": 3,
+      "points": "50pts"
+    },
+    {
+      "id": 4,
+      "points": "25pts"
     }
   ]
 }

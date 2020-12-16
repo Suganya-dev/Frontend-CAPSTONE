@@ -1,37 +1,49 @@
 import React, { useState, useEffect, useContext } from "react"
 import {ActivityContext} from "./Activitydataprovider"
 import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
+import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
 import "./Activity.css"
 
 // importing datas using usecontext
 export const ActivityDetail = (props) =>{
     const{activities,getActivity,releaseActivity} = useContext(ActivityContext)
     const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    const{rewards,getRewardPoints} = useContext(RewardTypeContext)
 
 // using statevariable for state change
 // whenever URL(state) changes useState helps to start render and gets data
 
     const[Activity,setActivity] = useState({})
     const[ActivityType,setActivityType]=useState({})
+    const[Rewards,setRewards]=useState({})
 
     useEffect(() => {
         getActivity()
         .then(getActivityType)
+        .then(getRewardPoints)
     },[])
-
+//  For finding the Activity name
     useEffect(() => {
-        // console.log(activities)
+                     // console.log(activities)
     const findActivity = activities.find(a => a.id === parseInt(props.match.params.activityId))|| {}
-    // console.log(findActivity)
+                 // console.log(findActivity)
     setActivity(findActivity)
     },[activities])
 console.log(activities)
 
+//  For finding the ActivityType name(not id) in the detail window
  useEffect(() => {
   const findActivityType = activityTypes.find(t => t.id === Activity.activityTypeId)
   setActivityType(findActivityType)
-//   console.log(findActivityType)
+  console.log(findActivityType)
  },[activityTypes])
+
+//  For getting the Rewards points(not id) in the detail window 
+// useEffect(() =>{
+//     const findRewards = rewards.find(r => r.id === Activity.rewardPoints)
+//     setRewards(findRewards)
+//     console.log(findRewards)
+// },[rewards])
  
     return(
         <> 

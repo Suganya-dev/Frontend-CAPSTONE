@@ -22,7 +22,7 @@ export const Activityform = (props) =>{
         const ActivityName = Name.current.value
         const ActivityType = parseInt(Type.current.value)
         const TimeLimit = Time.current.value
-        const RewardPoints = Rewards.current.value
+        const RewardPoints = parseInt(Rewards.current.value)
         const Activitydate = Date.current.value
        const kidsId = parseInt(props.match.params.kidsId)
     

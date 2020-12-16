@@ -10,7 +10,7 @@ import {ActivityDetail} from "./Activities/Activitydetail"
 import {ActivityEditForm} from "./Activities/ActivityEditForm"
 import {KidsDashBoard} from "./KidsDashBoard/KidsDashBoard"
 import {KidsDetail} from "./KidsDashBoard/KidsDetail"
-
+import {RewardTypeProvider} from "./ActivityType/RewardTypeProvider"
 export const ApplicationViews = (props) =>{
     return (
         <>
@@ -23,18 +23,20 @@ export const ApplicationViews = (props) =>{
            
           
           <ActivityProvider>
-              
               <ActivityTypeProvider>
+              
             <Route exact path="/activities/create/:kidsId(\d+)" render={
-                 props => <Activityform {...props} />
+                props => <Activityform {...props} />
              } />
              {/* New route for showing activity details */}
+            <RewardTypeProvider>
             <Route path="/activities/:activityId(\d+)" render={
                 props => <ActivityDetail {...props} />
             } />
             <Route path="/activities/edit/:activityId(\d+)" render={
             props => <ActivityEditForm {...props} />
             } />
+            </RewardTypeProvider>
             </ActivityTypeProvider>
             </ActivityProvider>
             
@@ -47,9 +49,11 @@ export const ApplicationViews = (props) =>{
             <KidsDashBoard {...props}/>
                 </Route> 
 
+       <ActivityTypeProvider> 
          <Route path="/users/:userId(\d+)" render={
          props => <KidsDetail {...props} />
             } />
+                </ActivityTypeProvider>
                 </ActivityProvider>
                 </Userprovider>
             
