@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react"
 import {ActivityContext} from "../Activities/Activitydataprovider"
 import {userContext} from "../parents/ParentsDataprovider"
 import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
+import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
 import {ActivityCard} from "../Activities/Activity"
 import Button from 'react-bootstrap/Button'
 import "../Activities/Activity.css"
@@ -12,16 +13,19 @@ export const KidsDetail =(props) => {
     const{activities,getActivity} = useContext(ActivityContext)
     const{users, getUsers} = useContext(userContext)
     const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    const{rewardTypes,getRewardPoints} = useContext(RewardTypeContext)
 
     const[Activity,setActivity] = useState([])
     const[kidusers,setKidusers] = useState({})
     const[ActivityType,setActivityType]=useState({})
+    const[RewardPoints,setRewardPoints]=useState({})
 
 //  getting all users,activities data by iterating it
     useEffect(() => {
         getActivity()
         .then(getUsers)
         .then(getActivityType)
+        .then (getRewardPoints)
     },[])
 //    console.log(ActivityType)
     // filtering the activities which matches to kids id.
@@ -37,31 +41,25 @@ export const KidsDetail =(props) => {
     setKidusers(findKids)
     console.log(findKids)
     },[users])
-// Finding the activitytype name in the detail window form
-
-// useEffect(() => {
-//     const findActivityType = activityTypes.find(t => t.id === Activity.activityTypeId) || {}
-//     setActivityType(findActivityType)
-//     // console.log("activitytype",activityTypes,"activities",Activity)
-//     console.log(Activity.activityTypeId)
-//    },[activityTypes])
 
 // CREATE a function completeACtivity & isComplete
-console.log(activityTypes)
 // used mapping when the kids have more than one activity.
   return(
       <>
       
     <h2 className="kiduser__name">Name:{kidusers.name}</h2>
        {
+           // Finding the activitytype name in the detail window form
+             // Getting the reward points in the detail window form 
             Activity.map(a =>  {
                 const findActivityType = activityTypes.find(t => t.id === a.activityTypeId) || {}
+                const findRewards = rewardTypes.find(r => r.id === a.rewardTypeId)
              return <section className = "activity">
              <h3 className="activity__name">Activity Name: {a.name}</h3>
             <h3 className="activity__date">Date: {a.date}</h3>
             <h3 className="activity__type">Activity Type: {findActivityType ? findActivityType.name: ""}</h3>
             <h3 className="activity__time">Time limit: {a.timeLimit}</h3>
-            <h3 className="activity__rewards">Reward points: {a.rewardPoints}</h3>
+            <h3 className="activity__rewards">Reward points: {findRewards ? findRewards.points : ""}</h3>
                
 
    <Button onClick={() => {

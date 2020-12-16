@@ -2,16 +2,16 @@ import React,{ useState} from "react"
 export const RewardTypeContext = React.createContext()
 
 export const RewardTypeProvider =(props) =>{
-    const{rewards,setRewards}=useState([])
+    const[rewardTypes,setRewards]=useState([])
     
 const getRewardPoints = () =>{
-    return fetch("http://localhost:8088/rewards")
+    return fetch("http://localhost:8088/rewardTypes")
     .then(res => res.json())
     .then(setRewards)
 }
 
 const addRewardPoints = (rewardPoints) =>{
-    return fetch("http://localhost:8088/rewards",{
+    return fetch("http://localhost:8088/rewardTypes",{
         method:"POST",
         headers:{
             "Content-Type": "application/json"
@@ -25,11 +25,11 @@ const addRewardPoints = (rewardPoints) =>{
         <>
         <RewardTypeContext.Provider value={
             {
-                rewards, getRewardPoints,addRewardPoints
+                rewardTypes, getRewardPoints,addRewardPoints
             }}>
                 {props.children}
             </RewardTypeContext.Provider>
             </>
     )}
 
-    // {RewardPoints ? RewardPoints.points : ""}
+                            
