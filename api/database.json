@@ -13,12 +13,6 @@
       "id": 2
     },
     {
-      "email": "lima0621@gmail.com",
-      "password": "liyamax",
-      "name": "li ma",
-      "id": 3
-    },
-    {
       "email": "scott0621@gmail.com",
       "password": "scott0621",
       "name": "Scott silver",
@@ -53,36 +47,12 @@
       "id": 10
     },
     {
-      "name": "Bryan",
-      "email": "suganprakash0621@gmail.com",
-      "password": "bryan",
-      "dob": "2020-12-09",
-      "parentId": 8,
-      "id": 11
-    },
-    {
-      "name": "Jisie",
-      "email": "suganprakash0621@gmail.com",
-      "password": "david",
-      "dob": "2020-12-08",
-      "parentId": 8,
-      "id": 12
-    },
-    {
       "name": "Tarunika",
       "email": "suganprakash0621@gmail.com",
       "password": "sugan0621",
       "dob": "2020-12-19",
       "parentId": 8,
       "id": 13
-    },
-    {
-      "name": "Diva",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Manio",
-      "dob": "2020-12-01",
-      "parentId": 8,
-      "id": 14
     },
     {
       "name": "Dax",
@@ -109,20 +79,26 @@
       "id": 28
     },
     {
-      "name": "Dev",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sbdvghsfh",
-      "dob": "2020-12-03",
-      "parentId": 1,
-      "id": 29
-    },
-    {
       "name": "Conifer",
       "email": "conifer@123.com",
       "password": "1234",
       "dob": "2020-12-03",
       "parentId": 1,
       "id": 30
+    },
+    {
+      "email": "peterpaul123@gmail.com",
+      "password": "1234",
+      "name": "Peter paul",
+      "id": 31
+    },
+    {
+      "name": "jeff",
+      "email": "jeff123@gmail.com",
+      "password": "1234",
+      "dob": "2020-12-08",
+      "parentId": 31,
+      "id": 32
     }
   ],
   "activities": [
@@ -147,26 +123,6 @@
       "id": 18
     },
     {
-      "name": "guitar Class",
-      "activityTypeId": 2,
-      "timeLimit": "4",
-      "rewardTypeId": 2,
-      "userId": 24,
-      "isCompleted": false,
-      "date": "2020-12-09",
-      "id": 19
-    },
-    {
-      "name": "Ballet class",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 4,
-      "userId": 29,
-      "isCompleted": true,
-      "date": "2020-12-25",
-      "id": 22
-    },
-    {
       "name": "Clean up your playarea",
       "activityTypeId": 1,
       "timeLimit": "2",
@@ -177,22 +133,12 @@
       "id": 23
     },
     {
-      "name": "Soccer class",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 3,
-      "userId": 22,
-      "isCompleted": false,
-      "date": "2020-12-19",
-      "id": 24
-    },
-    {
       "name": "Math and science",
       "activityTypeId": 2,
       "timeLimit": "3",
       "rewardTypeId": 3,
       "userId": 30,
-      "isCompleted": false,
+      "isCompleted": true,
       "date": "2020-12-25",
       "id": 25
     },
@@ -205,6 +151,26 @@
       "isCompleted": true,
       "date": "2020-12-23",
       "id": 26
+    },
+    {
+      "name": "Swimming",
+      "activityTypeId": "2",
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "id": 27,
+      "userId": 32,
+      "date": "2020-12-11",
+      "isCompleted": false
+    },
+    {
+      "name": "Clean up your playarea",
+      "activityTypeId": 1,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "id": 28,
+      "userId": 32,
+      "date": "2020-12-30",
+      "isCompleted": false
     }
   ],
   "activityTypes": [
