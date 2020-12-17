@@ -1,5 +1,6 @@
 import React,{useEffect,useContext, useState} from "react"
 import {userContext} from "./ParentsDataprovider"
+import Button from 'react-bootstrap/Button';
 
 import {Kidcard} from "./Kidcard"
 
@@ -15,7 +16,7 @@ export const ParentsDashboard =(props) =>{
 
  useEffect(() =>{
      const foundParent =users.find(p => p.id === parseInt(localStorage.getItem("kidschorepad_user")))
-     const foundKids =users.filter(k => k.parentId === parseInt(localStorage.getItem("kidschorepad_user")))
+     const foundKids =users.filter(k => k.parentId === parseInt(localStorage.getItem("kidschorepad_user",)))
      console.log(foundKids)
      setParent(foundParent)
      setkids(foundKids)
@@ -24,10 +25,14 @@ export const ParentsDashboard =(props) =>{
 
   return(
         <>
+        <section className="parents">
         {parent? parent.name : "no-parent"}
-        <button onClick={() => props.history.push("/kids/create")}>
+        <section className="button">
+        <Button variant="success" className="button" onClick={() => props.history.push("/kids/create")}>
              Add New Child
-            </button>
+            </Button>{''}
+            </section>
+            </section>
         {
         kids.map(kid=>{
         return(

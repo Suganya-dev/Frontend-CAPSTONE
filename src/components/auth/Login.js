@@ -21,13 +21,19 @@ export const Login = props => {
 
         existingUserCheck()
             .then(exists => {
-                if (exists && exists.password === password.current.value) {
+                if (exists && exists.password === password.current.value && exists.parentId ) {
                     // The user id is saved under the key app_user_id in local Storage. Change below if needed!
                     localStorage.setItem("kidschorepad_user", exists.id)
-                    props.history.push("/")
-                } else if (exists && exists.password !== password.current.value) {
-                    passwordDialog.current.showModal()
-                } else if (!exists) {
+                    props.history.push(`/users/${exists.id}`)}
+
+                else if (exists && exists.password === password.current.value && !exists.parentId ) {
+                    // The user id is saved under the key app_user_id in local Storage. Change below if needed!
+                    localStorage.setItem("kidschorepad_user", exists.id)
+                    props.history.push("/")} 
+
+            else if (exists && exists.password !== password.current.value) {
+                passwordDialog.current.showModal()
+            } else if (!exists) {
                     existDialog.current.showModal()
                 }
             })

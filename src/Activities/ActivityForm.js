@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useEffect } from "react"
 import { ActivityContext } from "./Activitydataprovider"
 import "./Activity.css"
+import Button from 'react-bootstrap/Button'
 
 //   // Use the required context providers for data
 export const Activityform = (props) =>{
@@ -22,7 +23,7 @@ export const Activityform = (props) =>{
         const ActivityName = Name.current.value
         const ActivityType = parseInt(Type.current.value)
         const TimeLimit = Time.current.value
-        const RewardPoints = Rewards.current.value
+        const RewardPoints = parseInt(Rewards.current.value)
         const Activitydate = Date.current.value
        const kidsId = parseInt(props.match.params.kidsId)
     
@@ -34,7 +35,7 @@ export const Activityform = (props) =>{
                 name : ActivityName,
                 activityTypeId : ActivityType,
                 timeLimit : TimeLimit,
-                rewardPoints:RewardPoints,
+                rewardTypeId:RewardPoints,
                 userId:kidsId,
                 isCompleted:false,
                 date:Activitydate
@@ -99,14 +100,16 @@ export const Activityform = (props) =>{
                 </div>
                 </fieldset>
 
-                <button type="submit"
+                <section className="button">
+                <Button variant="primary" className="button" type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     ConstructNewActivity()
                 }}
                 className="btn btn-primary">
                 Save Activity
-            </button>
+            </Button>
+            </section>
                 </form>
 )
 }

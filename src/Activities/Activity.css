@@ -13,3 +13,32 @@
       border: 1px solid goldenrod;
       background-color: rgb(9, 126, 165)210, 228)
   }
+
+  .ActivityForm{
+    border: 2px solid blue;
+    margin: 1em;
+    padding: 1em;
+    font-size:medium;
+    font-weight: bold;
+    background: orange;
+  }
+
+  .activity{
+    background: rgb(216, 159, 74)
+  }
+
+  .button{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+  
+  }
+
+  

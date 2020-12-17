@@ -41,9 +41,20 @@ const updateActivity = activity =>{
     .then(getActivity)
 }
 
+const completeActivity = activity =>{
+    return fetch(`http://localhost:8088/activities/${activity.id}`,{
+        method:"PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(activity)
+    })
+    .then(getActivity)
+}
+
 return(
     <ActivityContext.Provider value = {{
-        activities,getActivity,addActivity,releaseActivity,updateActivity
+        activities,getActivity,addActivity,releaseActivity,updateActivity,completeActivity
     }}>
         {props.children}
     </ActivityContext.Provider>

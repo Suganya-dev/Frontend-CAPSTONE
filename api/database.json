@@ -101,22 +101,6 @@
       "id": 24
     },
     {
-      "name": "Dolly",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Dax",
-      "dob": "2020-12-16",
-      "parentId": 1,
-      "id": 26
-    },
-    {
-      "name": "Deepu",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Sara",
-      "dob": "2019-04-17",
-      "parentId": 1,
-      "id": 27
-    },
-    {
       "name": "Tarunika ",
       "email": "suganprakash0621@gmail.com",
       "password": "Manio",
@@ -131,35 +115,22 @@
       "dob": "2020-12-03",
       "parentId": 1,
       "id": 29
+    },
+    {
+      "name": "Conifer",
+      "email": "conifer@123.com",
+      "password": "1234",
+      "dob": "2020-12-03",
+      "parentId": 1,
+      "id": 30
     }
   ],
   "activities": [
     {
       "name": "Fold your clothes",
       "activityTypeId": 1,
-      "timeLimit": "2",
-      "rewardPoints": "1",
-      "userId": 26,
-      "isCompleted": false,
-      "date": "2020-12-18",
-      "id": 13
-    },
-    {
-      "name": "Clean up your playarea , study and dining",
-      "activityTypeId": 2,
       "timeLimit": "1",
-      "rewardPoints": "2",
-      "id": 14,
-      "userId": 22,
-      "date": "2020-12-30",
-      "isCompleted": false
-    },
-    
-    {
-      "name": "Fold your clothes",
-      "activityTypeId": 1,
-      "timeLimit": "1",
-      "rewardPoints": "1",
+      "rewardTypeId": 1,
       "userId": 28,
       "isCompleted": false,
       "date": "2020-12-25",
@@ -169,7 +140,7 @@
       "name": "Soccer class",
       "activityTypeId": 2,
       "timeLimit": "1",
-      "rewardPoints": "2",
+      "rewardTypeId": 2,
       "userId": 24,
       "isCompleted": false,
       "date": "2020-12-30",
@@ -179,21 +150,61 @@
       "name": "guitar Class",
       "activityTypeId": 2,
       "timeLimit": "4",
-      "rewardPoints": "2",
+      "rewardTypeId": 2,
       "userId": 24,
       "isCompleted": false,
       "date": "2020-12-09",
       "id": 19
     },
     {
+      "name": "Ballet class",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 4,
+      "userId": 29,
+      "isCompleted": true,
+      "date": "2020-12-25",
+      "id": 22
+    },
+    {
+      "name": "Clean up your playarea",
+      "activityTypeId": 1,
+      "timeLimit": "2",
+      "rewardTypeId": 3,
+      "userId": 30,
+      "isCompleted": true,
+      "date": "2020-12-25",
+      "id": 23
+    },
+    {
+      "name": "Soccer class",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 3,
+      "userId": 22,
+      "isCompleted": false,
+      "date": "2020-12-19",
+      "id": 24
+    },
+    {
+      "name": "Math and science",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 3,
+      "userId": 30,
+      "isCompleted": false,
+      "date": "2020-12-25",
+      "id": 25
+    },
+    {
       "name": "Swimming",
       "activityTypeId": 2,
-      "timeLimit": "4",
-      "rewardPoints": "3",
-      "userId": 26,
-      "isCompleted": false,
-      "date": "2020-12-11",
-      "id": 20
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "userId": 30,
+      "isCompleted": true,
+      "date": "2020-12-23",
+      "id": 26
     }
   ],
   "activityTypes": [
@@ -208,6 +219,24 @@
     {
       "id": 3,
       "name": "Special Events"
+    }
+  ],
+  "rewardTypes": [
+    {
+      "id": 1,
+      "points": 100
+    },
+    {
+      "id": 2,
+      "points": 75
+    },
+    {
+      "id": 3,
+      "points": 50
+    },
+    {
+      "id": 4,
+      "points": 25
     }
   ]
 }

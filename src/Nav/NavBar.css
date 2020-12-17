@@ -1,11 +1,18 @@
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: left;
-    
-}
+    justify-content:  space-between;
+    font-size:large;
+    font-weight: bold;
+   
+   }
 
 .navbar__item {
     flex-basis: 20%;
     list-style-type: none;
+    border: 3px solid dodgerblue;
 }
+
+a:hover, a:active {
+    background-color: rgb(213, 233, 39);
+  }

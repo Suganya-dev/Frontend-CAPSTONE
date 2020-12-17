@@ -1,6 +1,7 @@
 import React, { useContext, useRef, useEffect } from "react"
 import { userContext } from "../parents/ParentsDataprovider"
 import "./Parent.css"
+import Button from 'react-bootstrap/Button'
 
 export const NewKidsform = (props) =>{
     const{getUsers,addUsers} = useContext(userContext)
@@ -66,15 +67,16 @@ export const NewKidsform = (props) =>{
             </div>
         </fieldset>
        
-
-                <button type="submit"
+           <section className="button">
+           <Button variant="primary" type="submit" className="button" 
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     constructNewChild()
                 }}
                 className="btn btn-primary">
                 Save Child
-            </button>
+            </Button>
+            </section>
             </form> 
     )
 }

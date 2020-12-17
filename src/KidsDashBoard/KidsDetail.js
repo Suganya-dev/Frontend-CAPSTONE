@@ -1,7 +1,11 @@
 import React, { useState, useEffect, useContext } from "react"
 import {ActivityContext} from "../Activities/Activitydataprovider"
 import {userContext} from "../parents/ParentsDataprovider"
-import { Link } from "react-router-dom"
+import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
+import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
+import {ActivityCard} from "../Activities/Activity"
+import {KidActivityDetail} from "./KidActivityDetail"
+import Button from 'react-bootstrap/Button'
 import "../Activities/Activity.css"
 import "./Kids.css"
 
@@ -9,21 +13,27 @@ import "./Kids.css"
 export const KidsDetail =(props) => {
     const{activities,getActivity} = useContext(ActivityContext)
     const{users, getUsers} = useContext(userContext)
+    const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    const{rewardTypes,getRewardPoints} = useContext(RewardTypeContext)
 
-    const[Activity,setActivity] = useState([])
+    const[Kidactivities,setKidactivities] = useState([])
     const[kidusers,setKidusers] = useState({})
+    const[ActivityType,setActivityType]=useState({})
+    const[RewardPoints,setRewardPoints]=useState({})
 
 //  getting all users,activities data by iterating it
     useEffect(() => {
         getActivity()
         .then(getUsers)
+        .then(getActivityType)
+        .then (getRewardPoints)
     },[])
-//    console.log(kidusers)
+//    console.log(ActivityType)
     // filtering the activities which matches to kids id.
     console.log(props)
     useEffect(() => {
     const findActivity = activities.filter(a => a.userId === parseInt(props.match.params.userId))
-    setActivity(findActivity)
+    setKidactivities(findActivity)
     },[activities])
 
 //   Finding the users related to the activities
@@ -33,35 +43,27 @@ export const KidsDetail =(props) => {
     console.log(findKids)
     },[users])
 
-console.log(Activity.name)
-// console.log(users)
-// used mapping when the kids have more than one activity.
-  return(
+return(
       <>
-        {/* <section className="users"/> */}
-    <h2 className="kiduser__name">Name:{kidusers.name}</h2>
+      <h2 className="kiduser__name">Name:{kidusers.name}</h2>
        {
-            Activity.map(a =>   
-             <section className = "activity">
-             <h3 className="activity__name">Activity Name: {a.name}</h3>
-               <h3 className="activity__date">Date: {a.date}</h3>
-               <h3 className="activity__type">Activity Type: {a.activityTypeId}</h3>
-                <h3 className="activity__time">Time limit: {a.timeLimit}</h3>
-                <h3 className="activity__rewards">Reward points: {a.rewardPoints}</h3>
-               
-
-   <button onClick={() => {
-    props.history.push("/users")}}
-    > Completed Activity </button>
-    </section>)
+           // Finding the activitytype name in the detail window form
+             // Getting the reward points in the detail window form 
+             // used mapping when the kids have more than one activity.
+             Kidactivities.filter(a=>a.isCompleted === false).map(activityObj =>  {
+                const findActivityType = activityTypes.find(t => t.id === activityObj.activityTypeId) || {}
+                const findRewards = rewardTypes.find(r => r.id === activityObj.rewardTypeId) 
+         return <KidActivityDetail key={activityObj.id} activityObj={activityObj}
+         activityType={findActivityType} rewardType={findRewards}/>
+        })
 }
-   {/* {
-       Activity.map(act =>{
-           return key={act.id} to={`/users/${act.id}`}>
-             <h3> {act.name} </h3>
-            
-       })
-   } */}
-   </>
+   {
+       Kidactivities.map(act =>{ 
+           if (act.isCompleted){
+               return(
+        <ActivityCard key={act.id} Activity ={act} to={`/users/${act.id}`} />)}})
+
+           }
+         </>
   )}
 

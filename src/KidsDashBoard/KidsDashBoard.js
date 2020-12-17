@@ -3,7 +3,7 @@ import {userContext} from "../parents/ParentsDataprovider"
 import { Link } from "react-router-dom"
 import "./Kids.css"
 
-export const KidsDashBoard = (props) =>{
+export const KidsDashBoard = () =>{
     const{users, getUsers} = useContext(userContext)
     const[kids,setkids] = useState([])
     const[parent,setParent] = useState([])

@@ -3,6 +3,7 @@ import "./Parent.css"
 import {ActivityContext} from"../Activities/Activitydataprovider"
 import {userContext} from "./ParentsDataprovider"
 import {ActivityCard} from "../Activities/Activity.js"
+import Button from 'react-bootstrap/Button'
 import { Link } from "react-router-dom"
 
 export const Kidcard = (props) =>{
@@ -23,11 +24,13 @@ export const Kidcard = (props) =>{
     return (
         <>
     <section className="users">
-    <h3 className="kiduser__name">Name:{props.kiduser.name}</h3>
+    <h3 className="kiduser__name">Child Name:{props.kiduser.name}</h3>
 
+    <section className="button1">
     <button  onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}>
     Add Activity
    </button> 
+   </section>
 
    {/* for makking hyperlink,using Link */}
   
@@ -38,7 +41,7 @@ export const Kidcard = (props) =>{
         </Link>
         })
 }
-
+<section className="button1">
 <button className="btn--release"
         onClick={() => {
             // Code to delete animal from database
@@ -48,6 +51,7 @@ export const Kidcard = (props) =>{
             })
         }}
         >Remove Child</button>
+        </section>
 </section>
 </>
     )}
