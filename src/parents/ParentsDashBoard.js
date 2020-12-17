@@ -27,9 +27,11 @@ export const ParentsDashboard =(props) =>{
         <>
         <section className="parents">
         {parent? parent.name : "no-parent"}
-        <Button onClick={() => props.history.push("/kids/create")}>
+        <section className="button">
+        <Button variant="success" className="button" onClick={() => props.history.push("/kids/create")}>
              Add New Child
-            </Button>
+            </Button>{''}
+            </section>
             </section>
         {
         kids.map(kid=>{

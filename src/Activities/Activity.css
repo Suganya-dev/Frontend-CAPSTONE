@@ -24,5 +24,21 @@
   }
 
   .activity{
-    background: rgb(144, 144, 221)
+    background: rgb(216, 159, 74)
   }
+
+  .button{
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 1px;
+    cursor: pointer;
+  
+  }
+
+  

@@ -100,7 +100,8 @@ export const Activityform = (props) =>{
                 </div>
                 </fieldset>
 
-                <Button variant="primary" type="submit"
+                <section className="button">
+                <Button variant="primary" className="button" type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     ConstructNewActivity()
@@ -108,6 +109,7 @@ export const Activityform = (props) =>{
                 className="btn btn-primary">
                 Save Activity
             </Button>
+            </section>
                 </form>
 )
 }

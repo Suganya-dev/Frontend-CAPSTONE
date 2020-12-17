@@ -55,7 +55,8 @@ useEffect(() =>{
         </section>
         
 {/* code to delete the activity */}
-        <Button className="btn--release"
+   <section className="button">
+        <Button variant="primary" className="button" type="submit"
         onClick={() => {
             releaseActivity(props.match.params.activityId)
                 .then(() => {
@@ -63,10 +64,18 @@ useEffect(() =>{
                 })
         }}
 >Delete Activity</Button>
+
+
+
 {/* code to edit the activity */}
 
-<Button onClick={() => {
+
+<Button variant="primary" className="button" type="submit"
+onClick={() => {
     props.history.push(`/activities/edit/${Activity.id}`)
     }}>Edit Activity</Button>
+    
+    </section>
+  
 </>
     )}

@@ -1,52 +1,34 @@
-import React, { useState, useEffect, useContext } from "react"
-import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
-import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
+import React,{useContext} from "react"
 import Button from 'react-bootstrap/Button'
-import {ActivityCard} from "../Activities/Activity"
+import {ActivityContext} from "../Activities/Activitydataprovider"
+import "./Kids.css"
 
-export const CompleteActivity =() =>{
 
-  const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
-    const{rewardTypes,getRewardPoints} = useContext(RewardTypeContext)
+export const KidActivityDetail = ({activityObj,activityType,rewardType}) => {
 
-useEffect (() => {
-      getActivityType()
-      .then(getRewardPoints)
-    },[])
+  const{completeActivity} = useContext(ActivityContext)
+  const kidId = localStorage.getItem("kidschorepad_user")
 
-const KidsActivityDetail = () => {
-return(
-    <>
-    
-  <h2 className="kiduser__name">Name:{kidusers.name}</h2>
-     {
-          Activity.map(a =>  {
-              const findActivityType = activityTypes.find(t => t.id === a.activityTypeId) || {}
-              const findRewards = rewardTypes.find(r => r.id === a.rewardTypeId)
-           return <section className = "activity">
-           <h3 className="activity__name">Activity Name: {a.name}</h3>
-          <h3 className="activity__date">Date: {a.date}</h3>
-          <h3 className="activity__type">Activity Type: {findActivityType ? findActivityType.name: ""}</h3>
-          <h3 className="activity__time">Time limit: {a.timeLimit}</h3>
-          <h3 className="activity__rewards">Reward points: {findRewards ? findRewards.points : ""}</h3>
-             
-
- <Button onClick={() => {
-  props.history.push("/users")}}
-  > Completed Activity </Button>
-  </section>})
-}
- {
-     Activity.map(act =>{ 
-         if (act.isCompleted){
-           <KidsActivityDetail{...props}/>
-         }else{
-          return(
-            <ActivityCard key={act.id} Activity ={act} to={"/users"} />
-         )}
-         })
-        }
-    </>
-
-)}
+  const completeCurrentActivity = () => {
+    const completedActivityObject = {
+    id:activityObj.id,
+    isCompleted: true,
+      }
+    completeActivity(completedActivityObject)
+    window.alert(`You earned ${rewardType.points} reward points`)
+  }
+return (
+<section className = "activity">
+<h3 className="activity__name">Activity Name: {activityObj.name}</h3>
+<h3 className="activity__date">Date: {activityObj.date}</h3>
+<h3 className="activity__type">Activity Type: {activityType ? activityType.name: ""}</h3>
+<h3 className="activity__time">Time limit: {activityObj.timeLimit}</h3>
+<h3 className="activity__rewards">Reward points: {rewardType ? rewardType.points : ""}</h3>
+  
+<section className="button">
+<Button  variant="primary"  className="button" type="submit" 
+onClick={() => {completeCurrentActivity()}}
+> Completed Activity </Button>
+</section>
+</section>)
 }

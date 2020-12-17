@@ -5,6 +5,7 @@
     padding: 1em;
     justify-content: space-between;
     border: 1px solid dodgerblue;
+    background: rgb(248, 196, 100)
   }
   
   .user{
@@ -12,6 +13,7 @@
       margin: 1em;
       padding: 1em;
       background-color: orange;
+      border: 1px solid dodgerblue;
     }
 
     .parents{
@@ -22,6 +24,7 @@
       justify-content: space-between;
       font-size:large;
       font-weight: bold;
+      
     }
 
     .userForm{
@@ -31,4 +34,25 @@
       font-size:medium;
       font-weight: bold;
       background: pink
+    }
+
+    .button{
+      background-color: rgb(106, 211, 20);
+      border: none;
+      /* color: white; */
+      padding: 10px 22px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 2px 1px;
+      cursor: pointer;
+    }
+
+    .button1{
+      background-color: rgb(84, 84, 228);
+      padding: 5px 10px;
+      text-align: center;
+      font-size: 26px;
+      cursor: pointer;
     }
