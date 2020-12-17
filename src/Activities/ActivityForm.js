@@ -35,7 +35,7 @@ export const Activityform = (props) =>{
                 name : ActivityName,
                 activityTypeId : ActivityType,
                 timeLimit : TimeLimit,
-                rewardPoints:RewardPoints,
+                rewardTypeId:RewardPoints,
                 userId:kidsId,
                 isCompleted:false,
                 date:Activitydate
@@ -100,7 +100,7 @@ export const Activityform = (props) =>{
                 </div>
                 </fieldset>
 
-                <Button type="submit"
+                <Button variant="primary" type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     ConstructNewActivity()

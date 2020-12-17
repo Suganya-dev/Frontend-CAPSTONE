@@ -42,18 +42,16 @@ export const KidsDetail =(props) => {
     console.log(findKids)
     },[users])
 
-// CREATE a function completeACtivity & isComplete
-// used mapping when the kids have more than one activity.
-  return(
+return(
       <>
-      
-    <h2 className="kiduser__name">Name:{kidusers.name}</h2>
+      <h2 className="kiduser__name">Name:{kidusers.name}</h2>
        {
            // Finding the activitytype name in the detail window form
              // Getting the reward points in the detail window form 
+             // used mapping when the kids have more than one activity.
             Activity.map(a =>  {
                 const findActivityType = activityTypes.find(t => t.id === a.activityTypeId) || {}
-                const findRewards = rewardTypes.find(r => r.id === a.rewardTypeId)
+                const findRewards = rewardTypes.find(r => r.id === a.rewardTypeId) 
              return <section className = "activity">
              <h3 className="activity__name">Activity Name: {a.name}</h3>
             <h3 className="activity__date">Date: {a.date}</h3>
@@ -62,8 +60,8 @@ export const KidsDetail =(props) => {
             <h3 className="activity__rewards">Reward points: {findRewards ? findRewards.points : ""}</h3>
                
 
-   <Button onClick={() => {
-    props.history.push("/users")}}
+   <Button  variant="primary" onClick={() => {
+    props.history.push(`/users/${kidusers.id}`)}}
     > Completed Activity </Button>
     </section>})
 }
@@ -71,7 +69,7 @@ export const KidsDetail =(props) => {
        Activity.map(act =>{ 
            if (act.isCompleted){
                return(
-        <ActivityCard key={act.id} Activity ={act} to={"/users"} />)}})
+        <ActivityCard key={act.id} Activity ={act} to={`/users/${act.id}`} />)}})
 
            }
          </>

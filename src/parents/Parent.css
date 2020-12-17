@@ -1,7 +1,7 @@
 .users{
     display: flex;
     flex-wrap: wrap;
-    /* margin: 1em; */
+    margin: 1em;
     padding: 1em;
     justify-content: space-between;
     border: 1px solid dodgerblue;
@@ -12,4 +12,23 @@
       margin: 1em;
       padding: 1em;
       background-color: orange;
+    }
+
+    .parents{
+      display: flex;
+      flex-wrap: wrap;
+      margin: 1em;
+      padding: 1em;
+      justify-content: space-between;
+      font-size:large;
+      font-weight: bold;
+    }
+
+    .userForm{
+      border: 2px solid blue;
+      margin: 2em;
+      padding: 2em;
+      font-size:medium;
+      font-weight: bold;
+      background: pink
     }

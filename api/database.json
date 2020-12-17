@@ -131,6 +131,14 @@
       "dob": "2020-12-03",
       "parentId": 1,
       "id": 29
+    },
+    {
+      "name": "Conifer",
+      "email": "conifer@123.com",
+      "password": "1234",
+      "dob": "2020-12-03",
+      "parentId": 1,
+      "id": 30
     }
   ],
   "activities": [
@@ -213,6 +221,16 @@
       "isCompleted": true,
       "date": "2020-12-25",
       "id": 22
+    },
+    {
+      "name": "Clean up your playarea",
+      "activityTypeId": 1,
+      "timeLimit": "2",
+      "rewardTypeId": 3,
+      "userId": 30,
+      "isCompleted": false,
+      "date": "2020-12-25",
+      "id": 23
     }
   ],
   "activityTypes": [
@@ -232,7 +250,7 @@
   "rewardTypes": [
     {
       "id": 1,
-      "points":100
+      "points": 100
     },
     {
       "id": 2,

@@ -16,7 +16,7 @@ export const ParentsDashboard =(props) =>{
 
  useEffect(() =>{
      const foundParent =users.find(p => p.id === parseInt(localStorage.getItem("kidschorepad_user")))
-     const foundKids =users.filter(k => k.parentId === parseInt(localStorage.getItem("kidschorepad_user")))
+     const foundKids =users.filter(k => k.parentId === parseInt(localStorage.getItem("kidschorepad_user",)))
      console.log(foundKids)
      setParent(foundParent)
      setkids(foundKids)
@@ -25,10 +25,12 @@ export const ParentsDashboard =(props) =>{
 
   return(
         <>
+        <section className="parents">
         {parent? parent.name : "no-parent"}
         <Button onClick={() => props.history.push("/kids/create")}>
              Add New Child
             </Button>
+            </section>
         {
         kids.map(kid=>{
         return(
