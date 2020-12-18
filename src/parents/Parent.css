@@ -5,14 +5,14 @@
     padding: 1em;
     justify-content: space-between;
     border: 1px solid dodgerblue;
-    background: rgb(248, 196, 100)
+    background: rgb(250, 212, 142)
   }
   
   .user{
       flex-basis: 28%;
       margin: 1em;
       padding: 1em;
-      background-color: orange;
+      background-color: rgb(122, 229, 236);
       border: 1px solid dodgerblue;
     }
 
@@ -50,7 +50,7 @@
     }
 
     .button1{
-      background-color: rgb(84, 84, 228);
+      background-color: rgb(117, 117, 226);
       padding: 5px 10px;
       text-align: center;
       font-size: 26px;

@@ -24,11 +24,11 @@
   }
 
   .activity{
-    background: rgb(216, 159, 74)
+    background: rgb(122, 229, 236);
   }
 
   .button{
-    background-color: blue;
+    background-color: rgb(117, 117, 226);
     border: none;
     color: white;
     padding: 10px 22px;

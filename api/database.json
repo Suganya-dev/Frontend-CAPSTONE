@@ -99,6 +99,36 @@
       "dob": "2020-12-08",
       "parentId": 31,
       "id": 32
+    },
+    {
+      "name": "Anto",
+      "email": "anto123@gmail.com",
+      "password": "1234",
+      "dob": "2020-10-14",
+      "parentId": 31,
+      "id": 34
+    },
+    {
+      "name": "Mike",
+      "email": "mike123@gmail.com",
+      "password": "1234",
+      "dob": "2020-08-18",
+      "parentId": 31,
+      "id": 35
+    },
+    {
+      "email": "sugan0621@gmail.com",
+      "password": "1234",
+      "name": "Suganya Chandar",
+      "id": 36
+    },
+    {
+      "name": "Tarunika",
+      "email": "taru123@gmail.com",
+      "password": "1234",
+      "dob": "2012-12-04",
+      "parentId": 36,
+      "id": 37
     }
   ],
   "activities": [
@@ -111,16 +141,6 @@
       "isCompleted": false,
       "date": "2020-12-25",
       "id": 17
-    },
-    {
-      "name": "Clean up your playarea",
-      "activityTypeId": 1,
-      "timeLimit": "2",
-      "rewardTypeId": 3,
-      "userId": 30,
-      "isCompleted": true,
-      "date": "2020-12-25",
-      "id": 23
     },
     {
       "name": "Math and science",
@@ -160,7 +180,47 @@
       "id": 30,
       "userId": 32,
       "date": "2020-12-31",
-      "isCompleted": false
+      "isCompleted": true
+    },
+    {
+      "name": "Clean up your playarea &Dining",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 4,
+      "id": 33,
+      "userId": 35,
+      "date": "2020-12-26",
+      "isCompleted": true
+    },
+    {
+      "name": "Math and science",
+      "activityTypeId": 1,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "id": 34,
+      "userId": 37,
+      "date": "2020-12-22",
+      "isCompleted": true
+    },
+    {
+      "name": "Swimming",
+      "activityTypeId": 2,
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "userId": 37,
+      "isCompleted": true,
+      "date": "2020-12-23",
+      "id": 35
+    },
+    {
+      "name": "Swimming",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 2,
+      "userId": 37,
+      "isCompleted": false,
+      "date": "2020-12-16",
+      "id": 36
     }
   ],
   "activityTypes": [

@@ -13,9 +13,9 @@ export const Activityform = (props) =>{
     const Rewards = useRef(null)
     const Date = useRef(null)
 
-    useEffect(() =>{
-        getActivity()
-    },[])
+    // useEffect(() =>{
+    //     getActivity()
+    // },[])
 
     const ConstructNewActivity = () =>{
         const ActivityName = Name.current.value
