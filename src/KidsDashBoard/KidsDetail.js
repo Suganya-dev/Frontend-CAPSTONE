@@ -5,7 +5,6 @@ import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
 import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
 import {ActivityCard} from "../Activities/Activity"
 import {KidActivityDetail} from "./KidActivityDetail"
-import Button from 'react-bootstrap/Button'
 import "../Activities/Activity.css"
 import "./Kids.css"
 

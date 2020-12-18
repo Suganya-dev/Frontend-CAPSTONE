@@ -13,8 +13,6 @@ export const Activityform = (props) =>{
     const Rewards = useRef(null)
     const Date = useRef(null)
 
-
-
     useEffect(() =>{
         getActivity()
     },[])
