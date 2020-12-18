@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react"
 import {ActivityContext} from"./Activitydataprovider"
 import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
+import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
 import Button from 'react-bootstrap/Button'
 import "./Activity.css"
 
@@ -8,6 +9,9 @@ import "./Activity.css"
 export const ActivityEditForm = (props) =>{
     const{activities,getActivity,updateActivity} = useContext(ActivityContext)
     const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    const{rewardTypes,getRewardPoints}=useContext(RewardTypeContext)
+
+
     //  console.log(activityTypes)
 const[Activity,setActivity] = useState({})
 
@@ -29,6 +33,7 @@ const getActivityInEditMode = () => {
 useEffect(() =>{
     // console.log(props.match.params)
     getActivityType()
+    .then(getRewardPoints)
     .then(getActivity)
 },[])
 
@@ -43,9 +48,9 @@ const constructNewActivity = () => {
     }else{
       updateActivity({
         name : Activity.name,
-        activityTypeId : Activity.activityTypeId,
+        activityTypeId :parseInt(Activity.activityTypeId),
         timeLimit : Activity.timeLimit,
-        rewardTypeId:Activity.rewardTypeId,
+        rewardTypeId:parseInt(Activity.rewardTypeId),
         id:Activity.id,
         userId:Activity.userId,
         date:Activity.date,
@@ -58,28 +63,28 @@ const constructNewActivity = () => {
    
     return (
         <form className="ActivityForm">
-                    <h2 className="ActivityForm__title">"Update Activity"</h2>
-                    <fieldset>
-                        <div className="form-group">
-                            <label htmlFor="name">Activity Name: </label>
-                            <input type="text" name="name" id ="name" required autoFocus className="form-control" placeholder="Activity name"
-                                value={Activity.name} onChange={handleControlledInputChange}/>
-                        </div>
-                    </fieldset>
+                <h2 className="ActivityForm__title">"Update Activity"</h2>
+                <fieldset>
+                    <div className="form-group">
+                        <label htmlFor="name">Activity Name: </label>
+                        <input type="text" name="name" id ="name" required autoFocus className="form-control" placeholder="Activity name"
+                     value={Activity.name} onChange={handleControlledInputChange}/>
+                    </div>
+                 </fieldset>
 
                  <fieldset>
                     <div className="form-group">
-                        <label htmlFor="activityName">Activity Date: </label>
-                        <input type="date" name="Activitydate" id="Activitydate" className="form-control" 
+                        <label htmlFor="date">Activity Date: </label>
+                        <input type="date" name="date" id="date" className="form-control" 
                          placeholder="Activity Date" value={Activity.date} onChange={handleControlledInputChange}/>
                     </div>
                 </fieldset>
             
                 <fieldset>
                         <div className="form-group">
-                        <label htmlFor="type">Activity Type: </label>
-                        <select defaultValue="" name="kidsactivityTypeId"  id="activityTypeId" className="form-control" 
-                          value={Activity.activityTypeId}  onChange={handleControlledInputChange}>
+                        <label htmlFor="activityTypeId">Activity Type: </label>
+                        <select defaultValue="" name="activityTypeId"  id="activityTypeId" className="form-control" 
+                         value={Activity.activityTypeId}  onChange={handleControlledInputChange}>
 
                         <option value="0">Select Activity Type</option>
                         {activityTypes.map(a => (
@@ -109,14 +114,16 @@ const constructNewActivity = () => {
 
                         <fieldset>
                 <div className="form-group">
-                <label htmlFor="age">RewardPoints: </label>
-                <select defaultValue="" name="kidsrewardPoints" id="rewardPoints" className="form-control"
-                  value ={Activity.rewardTypeId} onChange={handleControlledInputChange} >
-                <option value="0">Reward Points</option>
-                <option value="1">25 pts</option>
-                <option value="2">50 pts</option>
-                <option value="3">75 pts</option>
-                <option value="4">100 pts</option>
+                <label htmlFor="rewardTypeId">RewardPoints: </label>
+                <select defaultValue=""  name="rewardTypeId" id="rewardTypeId" className="form-control"
+                  value ={Activity.rewardTypeId} onChange={handleControlledInputChange}>
+
+                        <option value="0">Reward Points</option>
+                        {rewardTypes.map(r => (
+                          <option key={r.id} value={r.id}>
+                              {r.points}
+                          </option>
+                          ))}
                 </select>
                 </div>
                 </fieldset>

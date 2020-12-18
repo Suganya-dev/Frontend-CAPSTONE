@@ -113,16 +113,6 @@
       "id": 17
     },
     {
-      "name": "Soccer class",
-      "activityTypeId": 2,
-      "timeLimit": "1",
-      "rewardTypeId": 2,
-      "userId": 24,
-      "isCompleted": false,
-      "date": "2020-12-30",
-      "id": 18
-    },
-    {
       "name": "Clean up your playarea",
       "activityTypeId": 1,
       "timeLimit": "2",
@@ -153,23 +143,23 @@
       "id": 26
     },
     {
-      "name": "Swimming",
-      "activityTypeId": "2",
+      "name": "Soccer class",
+      "activityTypeId": 2,
       "timeLimit": "4",
-      "rewardTypeId": 2,
-      "id": 27,
+      "rewardTypeId": 3,
+      "id": 29,
       "userId": 32,
-      "date": "2020-12-11",
+      "date": "2020-12-08",
       "isCompleted": false
     },
     {
-      "name": "Clean up your playarea",
-      "activityTypeId": 1,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "id": 28,
+      "name": "Fold your clothes and sister clothes",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 1,
+      "id": 30,
       "userId": 32,
-      "date": "2020-12-30",
+      "date": "2020-12-31",
       "isCompleted": false
     }
   ],
