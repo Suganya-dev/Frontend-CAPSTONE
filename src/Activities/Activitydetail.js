@@ -70,7 +70,7 @@ useEffect(() =>{
 {/* code to edit the activity */}
 
 
-<Button variant="primary" className="button" type="submit"
+<Button variant="primary" size="sm" className="button" type="submit"
 onClick={() => {
     props.history.push(`/activities/edit/${Activity.id}`)
     }}>Edit Activity</Button>

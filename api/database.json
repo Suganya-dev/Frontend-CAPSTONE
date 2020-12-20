@@ -12,71 +12,12 @@
       "name": "Liya Max",
       "id": 2
     },
-    {
-      "email": "scott0621@gmail.com",
-      "password": "scott0621",
-      "name": "Scott silver",
-      "id": 4
-    },
-    {
-      "email": "jackemma@gmail.com",
-      "password": "jackemma",
-      "name": "jack Emma",
-      "id": 5
-    },
+   
     {
       "email": "suganprakash0621@gmail.com",
       "password": "sugan0621",
       "name": "Suganya Prakash",
       "id": 8
-    },
-    {
-      "name": "Liya",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "dob": "2020-07-15",
-      "parentId": 8,
-      "id": 9
-    },
-    {
-      "name": "santhosh",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "dob": "2020-12-25",
-      "parentId": 8,
-      "id": 10
-    },
-    {
-      "name": "Tarunika",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "dob": "2020-12-19",
-      "parentId": 8,
-      "id": 13
-    },
-    {
-      "name": "Dax",
-      "email": "dax111@gmail.com",
-      "password": "bhjgh",
-      "dob": "2020-10-07",
-      "parentId": 1,
-      "id": 22
-    },
-    {
-      "name": "David",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Sara",
-      "dob": "2020-12-19",
-      "parentId": 1,
-      "id": 24
-    },
-    {
-      "name": "Tarunika ",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Manio",
-      "dob": "2020-12-16",
-      "parentId": 1,
-      "id": 28
     },
     {
       "name": "Conifer",
@@ -129,6 +70,14 @@
       "dob": "2012-12-04",
       "parentId": 36,
       "id": 37
+    },
+    {
+      "name": "Divashini",
+      "email": "diva123@gmail.com",
+      "password": "1234",
+      "dob": "2016-02-06",
+      "parentId": 36,
+      "id": 38
     }
   ],
   "activities": [
@@ -152,26 +101,7 @@
       "date": "2020-12-25",
       "id": 25
     },
-    {
-      "name": "Swimming",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "userId": 30,
-      "isCompleted": true,
-      "date": "2020-12-23",
-      "id": 26
-    },
-    {
-      "name": "Soccer class",
-      "activityTypeId": 2,
-      "timeLimit": "4",
-      "rewardTypeId": 3,
-      "id": 29,
-      "userId": 32,
-      "date": "2020-12-08",
-      "isCompleted": false
-    },
+   
     {
       "name": "Fold your clothes and sister clothes",
       "activityTypeId": 2,
@@ -193,16 +123,6 @@
       "isCompleted": true
     },
     {
-      "name": "Math and science",
-      "activityTypeId": 1,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "id": 34,
-      "userId": 37,
-      "date": "2020-12-22",
-      "isCompleted": true
-    },
-    {
       "name": "Swimming",
       "activityTypeId": 2,
       "timeLimit": "4",
@@ -213,14 +133,24 @@
       "id": 35
     },
     {
-      "name": "Swimming",
+      "name": "Clean up your playarea",
       "activityTypeId": 2,
       "timeLimit": "2",
       "rewardTypeId": 2,
+      "id": 37,
+      "userId": 38,
+      "date": "2020-12-31",
+      "isCompleted": true
+    },
+    {
+      "name": "Soccer class",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 4,
+      "id": 38,
       "userId": 37,
-      "isCompleted": false,
       "date": "2020-12-16",
-      "id": 36
+      "isCompleted": false
     }
   ],
   "activityTypes": [

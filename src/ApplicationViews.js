@@ -24,12 +24,12 @@ export const ApplicationViews = (props) => {
 
                 <ActivityProvider>
                     <ActivityTypeProvider>
-
+                    <RewardTypeProvider>
                         <Route exact path="/activities/create/:kidsId(\d+)" render={
                             props => <Activityform {...props} />
                         } />
                         {/* New route for showing activity details */}
-                        <RewardTypeProvider>
+                     
                             <Route path="/activities/:activityId(\d+)" render={
                                 props => <ActivityDetail {...props} />
                             } />

@@ -24,6 +24,8 @@
       justify-content: space-between;
       font-size:large;
       font-weight: bold;
+      font-style: italic;
+     
       
     }
 
@@ -33,6 +35,7 @@
       padding: 2em;
       font-size:medium;
       font-weight: bold;
+      font-style: italic;
       background: pink
     }
 

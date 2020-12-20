@@ -129,7 +129,7 @@ const constructNewActivity = () => {
                 </fieldset>
                         
                 <section className="button">
-                <Button variant="primary" className="button" type="submit"
+                <Button variant="primary" size="sm" className="button" type="submit"
                 onClick={evt => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     constructNewActivity()

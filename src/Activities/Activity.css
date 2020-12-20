@@ -3,13 +3,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid orange;
-    background-color: rgb(9, 126, 165)210, 228)
+    background-color: rgb(78, 203, 245)210, 228)
   }
   
   .activity{
       flex-basis: 28%;
       margin: 1em;
       padding: 1em;
+      font-style: italic;
       border: 1px solid goldenrod;
       background-color: rgb(9, 126, 165)210, 228)
   }
@@ -20,6 +21,7 @@
     padding: 1em;
     font-size:medium;
     font-weight: bold;
+    font-style: italic;
     background:lightblue;
   }
 
@@ -31,12 +33,12 @@
     background-color: rgb(117, 117, 226);
     border: none;
     color: white;
-    padding: 10px 22px;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 2px 1px;
+    /* margin: 2px 1px; */
     cursor: pointer;
   
   }
