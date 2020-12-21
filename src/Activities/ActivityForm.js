@@ -7,6 +7,7 @@ import Button from 'react-bootstrap/Button'
 
 //   // Use the required context providers for data
 export const Activityform = (props) =>{
+
     const{addActivity,getActivity} = useContext(ActivityContext)
     const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
     const{rewardTypes,getRewardPoints}=useContext(RewardTypeContext)

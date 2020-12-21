@@ -12,7 +12,6 @@
       "name": "Liya Max",
       "id": 2
     },
-   
     {
       "email": "suganprakash0621@gmail.com",
       "password": "sugan0621",
@@ -82,16 +81,6 @@
   ],
   "activities": [
     {
-      "name": "Fold your clothes",
-      "activityTypeId": 1,
-      "timeLimit": "1",
-      "rewardTypeId": 1,
-      "userId": 28,
-      "isCompleted": false,
-      "date": "2020-12-25",
-      "id": 17
-    },
-    {
       "name": "Math and science",
       "activityTypeId": 2,
       "timeLimit": "3",
@@ -101,7 +90,6 @@
       "date": "2020-12-25",
       "id": 25
     },
-   
     {
       "name": "Fold your clothes and sister clothes",
       "activityTypeId": 2,
@@ -123,16 +111,6 @@
       "isCompleted": true
     },
     {
-      "name": "Swimming",
-      "activityTypeId": 2,
-      "timeLimit": "4",
-      "rewardTypeId": 2,
-      "userId": 37,
-      "isCompleted": true,
-      "date": "2020-12-23",
-      "id": 35
-    },
-    {
       "name": "Clean up your playarea",
       "activityTypeId": 2,
       "timeLimit": "2",
@@ -151,6 +129,16 @@
       "userId": 37,
       "date": "2020-12-16",
       "isCompleted": false
+    },
+    {
+      "name": "Fold your clothes",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 1,
+      "userId": 37,
+      "isCompleted": false,
+      "date": "2020-12-30",
+      "id": 39
     }
   ],
   "activityTypes": [

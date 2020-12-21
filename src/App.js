@@ -11,6 +11,7 @@ export const Chorepad =(props) =>(
   <>
    <Route render={() => {
           // The user id is saved under the key app_user_id in local Storage. Change below if needed!
+      
             if (localStorage.getItem("kidschorepad_user")) {
                 return (
                     <>
