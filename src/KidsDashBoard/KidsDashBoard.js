@@ -20,6 +20,7 @@ export const KidsDashBoard = () =>{
 
     return(
         <>
+        
         <h2>Welcome to KidsChorePad </h2>
         {
          kids.map(K => {

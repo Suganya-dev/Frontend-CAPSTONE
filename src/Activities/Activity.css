@@ -11,7 +11,8 @@
       margin: 1em;
       padding: 1em;
       font-style: italic;
-      border: 1px solid goldenrod;
+      border: 1px solid dodgerblue;
+      border-radius: 10px 10px;
       background-color: rgb(9, 126, 165)210, 228)
   }
 
@@ -26,7 +27,7 @@
   }
 
   .activity{
-    background: rgb(122, 229, 236);
+    background: rgb(250, 212, 142)
   }
 
   .button{

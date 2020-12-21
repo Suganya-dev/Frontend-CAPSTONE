@@ -5,7 +5,11 @@
     font-size:large;
     font-weight: bold;
     font-style: italic;
-   
+    border: 2px solid rgb(75, 75, 252);
+    border-radius: 15px 15px;
+    margin: 2em;
+    padding: 2em;
+    background: rgb(250, 212, 142)
    }
 
 .navbar__item {
@@ -14,6 +18,7 @@
     margin: 2em;
     padding: 1em;
     border: 2px solid dodgerblue;
+    border-radius: 10px 10px;
     font-style: italic;
 }
 

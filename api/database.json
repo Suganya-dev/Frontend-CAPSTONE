@@ -77,6 +77,14 @@
       "dob": "2016-02-06",
       "parentId": 36,
       "id": 38
+    },
+    {
+      "name": "liya",
+      "email": "liya123@gmail.com",
+      "password": "1234",
+      "dob": "2020-12-02",
+      "parentId": 36,
+      "id": 39
     }
   ],
   "activities": [
@@ -136,7 +144,7 @@
       "timeLimit": "3",
       "rewardTypeId": 1,
       "userId": 37,
-      "isCompleted": false,
+      "isCompleted": true,
       "date": "2020-12-30",
       "id": 39
     }

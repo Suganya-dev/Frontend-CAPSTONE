@@ -5,6 +5,7 @@
     padding: 1em;
     justify-content: space-between;
     border: 1px solid dodgerblue;
+    border-radius: 10px 10px;
     background: rgb(250, 212, 142)
   }
   
@@ -22,7 +23,7 @@
       margin: 1em;
       padding: 1em;
       justify-content: space-between;
-      font-size:large;
+      font-size:x-large;
       font-weight: bold;
       font-style: italic;
      
