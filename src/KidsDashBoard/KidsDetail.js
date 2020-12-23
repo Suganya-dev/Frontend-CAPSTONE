@@ -50,8 +50,9 @@ return(
              // Getting the reward points in the detail window form 
              // used mapping when the kids have more than one activity.
              Kidactivities.filter(a=>a.isCompleted === false).map(activityObj =>  {
-                const findActivityType = activityTypes.find(t => t.id === activityObj.activityTypeId) || {}
-                const findRewards = rewardTypes.find(r => r.id === activityObj.rewardTypeId) 
+            const findActivityType = activityTypes.find(t => t.id === activityObj.activityTypeId) || {}
+            const findRewards = rewardTypes.find(r => r.id === activityObj.rewardTypeId) 
+            
          return <KidActivityDetail key={activityObj.id} activityObj={activityObj}
          activityType={findActivityType} rewardType={findRewards}/>
         })

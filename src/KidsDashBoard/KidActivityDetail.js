@@ -15,7 +15,8 @@ export const KidActivityDetail = ({activityObj,activityType,rewardType}) => {
     isCompleted: true,
       }
     completeActivity(completedActivityObject)
-    window.alert(`You earned ${rewardType.points} reward points`)
+    window.alert(`Congrats,
+    You earned ${rewardType.points} reward points`)
   }
 return (
 <section className = "activity">
