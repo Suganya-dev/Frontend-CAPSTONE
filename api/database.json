@@ -227,54 +227,104 @@
       "id": 42
     },
     {
-      "name": "Swimming",
+      "name": "Music class",
       "activityTypeId": 1,
       "timeLimit": "4",
       "rewardTypeId": 2,
-      "userId": 44,
-      "isCompleted": true,
-      "date": "2021-01-09",
-      "id": 44
+      "userId": 48,
+      "isCompleted": false,
+      "date": "2021-01-15",
+      "id": 52
     },
     {
-      "name": "Fold your clothes",
+      "name": "Tennis ",
+      "activityTypeId": 1,
+      "timeLimit": "4",
+      "rewardTypeId": 1,
+      "userId": 48,
+      "isCompleted": false,
+      "date": "2021-01-22",
+      "id": 53
+    },
+    {
+      "name": "Clean up your playarea",
+      "activityTypeId": 2,
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "userId": 48,
+      "isCompleted": false,
+      "date": "2021-01-08",
+      "id": 54
+    },
+    {
+      "name": "Math and science111",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "id": 57,
+      "userId": 44,
+      "date": "2021-01-13",
+      "isCompleted": true
+    },
+    {
+      "name": "Swimming & ballet dance",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "id": 58,
+      "userId": 44,
+      "date": "2021-01-15",
+      "isCompleted": true
+    },
+    {
+      "name": "Clean up your playarea",
       "activityTypeId": 2,
       "timeLimit": "3",
       "rewardTypeId": 2,
       "userId": 45,
       "isCompleted": true,
-      "date": "2021-01-09",
-      "id": 45
-    },
-    {
-      "name": "Swimming & ballet dance",
-      "activityTypeId": 1,
-      "timeLimit": "5",
-      "rewardTypeId": 1,
-      "id": 47,
-      "userId": 48,
-      "date": "2021-01-14",
-      "isCompleted": true
-    },
-    {
-      "name": "Math and science",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 2,
-      "userId": 47,
-      "isCompleted": false,
-      "date": "2021-01-08",
-      "id": 50
+      "date": "2021-01-16",
+      "id": 59
     },
     {
       "name": "Soccer class",
       "activityTypeId": 1,
-      "timeLimit": "4",
-      "rewardTypeId": 1,
+      "timeLimit": "3",
+      "rewardTypeId": 3,
+      "userId": 45,
+      "isCompleted": true,
+      "date": "2021-01-21",
+      "id": 60
+    },
+    {
+      "name": "Clean up your playarea",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "userId": 45,
+      "isCompleted": true,
+      "date": "2021-01-15",
+      "id": 61
+    },
+    {
+      "name": "Swimming",
+      "activityTypeId": 1,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
       "userId": 47,
-      "isCompleted": false,
-      "date": "2021-01-08",
-      "id": 51
+      "isCompleted": true,
+      "date": "2021-01-14",
+      "id": 66
+    },
+    {
+      "name": "Tennis ",
+      "activityTypeId": 1,
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "userId": 47,
+      "isCompleted": true,
+      "date": "2021-01-15",
+      "id": 67
     }
   ],
   "activityTypes": [

@@ -15,3 +15,6 @@
       border: 1px solid dodgerblue;
       background: rgb(250, 212, 142)
      }
+     .confetti {
+         z-index: 2;
+     }
