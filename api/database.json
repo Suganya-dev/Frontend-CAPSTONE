@@ -40,7 +40,6 @@
       "parentId": 31,
       "id": 32
     },
- 
     {
       "name": "Mike",
       "email": "mike123@gmail.com",
@@ -70,20 +69,75 @@
       "dob": "2016-02-06",
       "parentId": 36,
       "id": 38
+    },
+    {
+      "email": "sugan123@gmail.com",
+      "password": "1234",
+      "name": "Suganya Prakash",
+      "id": 39
+    },
+    {
+      "name": "Tarunika",
+      "email": "taru123@gmail.com",
+      "password": "1234",
+      "dob": "2012-01-13",
+      "parentId": 39,
+      "id": 40
+    },
+    {
+      "email": "kristen123@gmail.com",
+      "password": "1234",
+      "name": "Kristen steele",
+      "id": 41
+    },
+    {
+      "name": "Dax",
+      "email": "dax123@gmail.com",
+      "password": "1234",
+      "dob": "2020-10-06",
+      "parentId": 41,
+      "id": 42
+    },
+    {
+      "name": "Mike john",
+      "email": "mike123@gmail.com",
+      "password": "1234",
+      "dob": "2020-11-17",
+      "parentId": 1,
+      "id": 43
+    },
+    {
+      "name": "tarudiva",
+      "email": "tarudiva123@gmail.com",
+      "password": "1234",
+      "dob": "2020-12-09",
+      "parentId": 8,
+      "id": 44
+    },
+    {
+      "name": "Vaishu",
+      "email": "vaishu123@gmail.com",
+      "password": "1234",
+      "dob": "2021-01-01",
+      "parentId": 8,
+      "id": 45
+    },
+    {
+      "email": "deepu123@gmail.com",
+      "password": "1234",
+      "name": "Deepika Surendar",
+      "id": 46
+    },
+    {
+      "name": "liya",
+      "email": "liya123@gmail.com",
+      "password": "12364",
+      "dob": "2020-10-14",
+      "parentId": 46,
+      "id": 47
     }
-   
   ],
   "activities": [
-    {
-      "name": "Math and science",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 3,
-      "userId": 30,
-      "isCompleted": true,
-      "date": "2020-12-25",
-      "id": 25
-    },
     {
       "name": "Fold your clothes and sister clothes",
       "activityTypeId": 2,
@@ -142,6 +196,56 @@
       "id": 40,
       "userId": 40,
       "date": "2020-12-26",
+      "isCompleted": true
+    },
+    {
+      "name": "Fold your clothes & make your bed",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 3,
+      "id": 41,
+      "userId": 42,
+      "date": "2020-12-26",
+      "isCompleted": true
+    },
+    {
+      "name": "Fold your clothes",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 3,
+      "userId": 43,
+      "isCompleted": false,
+      "date": "2021-01-06",
+      "id": 42
+    },
+    {
+      "name": "Swimming",
+      "activityTypeId": 1,
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "userId": 44,
+      "isCompleted": true,
+      "date": "2021-01-09",
+      "id": 44
+    },
+    {
+      "name": "Fold your clothes",
+      "activityTypeId": 2,
+      "timeLimit": "3",
+      "rewardTypeId": 2,
+      "userId": 45,
+      "isCompleted": false,
+      "date": "2021-01-09",
+      "id": 45
+    },
+    {
+      "name": "Math and science",
+      "activityTypeId": 1,
+      "timeLimit": "4",
+      "rewardTypeId": 1,
+      "id": 46,
+      "userId": 47,
+      "date": "2021-01-18",
       "isCompleted": true
     }
   ],

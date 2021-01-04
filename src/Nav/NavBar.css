@@ -8,8 +8,8 @@
     border: 2px solid rgb(75, 75, 252);
     border-radius: 15px 15px;
     margin: 2em;
-    padding: 2em;
-    background: rgb(250, 212, 142)
+    padding: 3em;
+    background: rgb(253, 174, 207)
    }
 
 .navbar__item {
@@ -23,7 +23,7 @@
 }
 
 a:hover, a:active {
-    background-color: rgb(248, 238, 99);
+    background-color: rgb(228, 155, 241);
   }
 
   
