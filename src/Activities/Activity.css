@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid orange;
-    background-color: rgb(78, 203, 245)210, 228)
+    background-color: rgb(141, 224, 252)210, 228)
   }
   
   .activity{
@@ -12,7 +12,7 @@
       padding: 1em;
       font-style: italic;
       border: 1px solid dodgerblue;
-      border-radius: 10px 10px;
+      border-radius: 20px 20px;
       background-color: rgb(9, 126, 165)210, 228)
   }
 
@@ -27,7 +27,7 @@
   }
 
   .activity{
-    background: rgb(252, 190, 208)
+    background: rgb(252, 208, 220)
   }
 
   .button{

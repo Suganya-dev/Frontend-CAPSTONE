@@ -135,6 +135,14 @@
       "dob": "2020-10-14",
       "parentId": 46,
       "id": 47
+    },
+    {
+      "name": "Vaishu",
+      "email": "vaishu123@gmail.com",
+      "password": "1234",
+      "dob": "2021-01-13",
+      "parentId": 46,
+      "id": 48
     }
   ],
   "activities": [
@@ -234,19 +242,39 @@
       "timeLimit": "3",
       "rewardTypeId": 2,
       "userId": 45,
-      "isCompleted": false,
+      "isCompleted": true,
       "date": "2021-01-09",
       "id": 45
     },
     {
+      "name": "Swimming & ballet dance",
+      "activityTypeId": 1,
+      "timeLimit": "5",
+      "rewardTypeId": 1,
+      "id": 47,
+      "userId": 48,
+      "date": "2021-01-14",
+      "isCompleted": true
+    },
+    {
       "name": "Math and science",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 2,
+      "userId": 47,
+      "isCompleted": false,
+      "date": "2021-01-08",
+      "id": 50
+    },
+    {
+      "name": "Soccer class",
       "activityTypeId": 1,
       "timeLimit": "4",
       "rewardTypeId": 1,
-      "id": 46,
       "userId": 47,
-      "date": "2021-01-18",
-      "isCompleted": true
+      "isCompleted": false,
+      "date": "2021-01-08",
+      "id": 51
     }
   ],
   "activityTypes": [

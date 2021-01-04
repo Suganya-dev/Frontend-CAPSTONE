@@ -4,7 +4,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  border: 4px solid rgb(101, 156, 245);
+  /* border: 4px solid rgb(101, 156, 245); */
   border-radius: 15px 15px;
   margin: 55% 45%;
   padding: 15px 7px;
@@ -13,10 +13,11 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-    background: rgb(87, 240, 194);
+    background: rgb(140, 243, 212);
 }
 #root{
-  background-color: rgb(137, 216, 253);
+  background-color: rgb(158, 223, 253);
+   border-radius: 10px 10px;
   margin: 3em;
   padding: 3em;
 }

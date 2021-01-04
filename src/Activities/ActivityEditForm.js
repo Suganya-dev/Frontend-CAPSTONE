@@ -63,7 +63,7 @@ const constructNewActivity = () => {
    
     return (
         <form className="ActivityForm">
-                <h2 className="ActivityForm__title">"Update Activity"</h2>
+                <h2 className="ActivityForm__title">Update Activity</h2>
                 <fieldset>
                     <div className="form-group">
                         <label htmlFor="name">Activity Name: </label>

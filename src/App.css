@@ -4,6 +4,10 @@
   margin: 2em;
   padding: 1em;
 }
+body{
+ background-image: url(Colorful\ Shapes\ Kids\ Group\ T-Shirt.png);
+ background-position: center;
+ } 
 
 /* .App-logo {
   height: 40vmin;
