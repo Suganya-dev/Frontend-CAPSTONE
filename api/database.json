@@ -1,88 +1,12 @@
 {
   "users": [
     {
-      "email": "jackrose@gmail.com",
-      "password": "jackrose",
-      "name": "David Mc donald",
-      "id": 1
-    },
-    {
-      "email": "liyamax0621@gmail.com",
-      "password": "liyamax",
-      "name": "Liya Max",
-      "id": 2
-    },
-    {
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "name": "Suganya Prakash",
-      "id": 8
-    },
-    {
-      "name": "Conifer",
-      "email": "conifer@123.com",
-      "password": "1234",
-      "dob": "2020-12-03",
-      "parentId": 1,
-      "id": 30
-    },
-    {
-      "email": "peterpaul123@gmail.com",
-      "password": "1234",
-      "name": "Peter paul",
-      "id": 31
-    },
-    {
-      "name": "jeff",
-      "email": "jeff123@gmail.com",
-      "password": "1234",
-      "dob": "2020-12-08",
-      "parentId": 31,
-      "id": 32
-    },
-    {
       "name": "Mike",
       "email": "mike123@gmail.com",
       "password": "1234",
       "dob": "2020-08-18",
       "parentId": 31,
       "id": 35
-    },
-    {
-      "email": "sugan0621@gmail.com",
-      "password": "1234",
-      "name": "Suganya Chandar",
-      "id": 36
-    },
-    {
-      "name": "Tarunika",
-      "email": "taru123@gmail.com",
-      "password": "1234",
-      "dob": "2012-12-04",
-      "parentId": 36,
-      "id": 37
-    },
-    {
-      "name": "Divashini",
-      "email": "diva123@gmail.com",
-      "password": "1234",
-      "dob": "2016-02-06",
-      "parentId": 36,
-      "id": 38
-    },
-    {
-      "email": "sugan123@gmail.com",
-      "password": "1234",
-      "name": "Suganya Prakash",
-      "id": 39
-    },
-    {
-      "name": "Tarunika",
-      "email": "taru123@gmail.com",
-      "password": "1234",
-      "dob": "2012-01-13",
-      "parentId": 39,
-      "id": 40
     },
     {
       "email": "kristen123@gmail.com",
@@ -107,22 +31,6 @@
       "id": 43
     },
     {
-      "name": "tarudiva",
-      "email": "tarudiva123@gmail.com",
-      "password": "1234",
-      "dob": "2020-12-09",
-      "parentId": 8,
-      "id": 44
-    },
-    {
-      "name": "Vaishu",
-      "email": "vaishu123@gmail.com",
-      "password": "1234",
-      "dob": "2021-01-01",
-      "parentId": 8,
-      "id": 45
-    },
-    {
       "email": "deepu123@gmail.com",
       "password": "1234",
       "name": "Deepika Surendar",
@@ -143,6 +51,20 @@
       "dob": "2021-01-13",
       "parentId": 46,
       "id": 48
+    },
+    {
+      "email": "suganprakash0621@gmail.com",
+      "password": "sugan0621",
+      "name": "Suganya Chandar",
+      "id": 49
+    },
+    {
+      "name": "Divashini",
+      "email": "divashi123@gmail.com",
+      "password": "1234",
+      "dob": "2020-04-16",
+      "parentId": 49,
+      "id": 50
     }
   ],
   "activities": [
@@ -157,46 +79,6 @@
       "isCompleted": true
     },
     {
-      "name": "Clean up your playarea &Dining",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 4,
-      "id": 33,
-      "userId": 35,
-      "date": "2020-12-26",
-      "isCompleted": true
-    },
-    {
-      "name": "Clean up your playarea",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 2,
-      "id": 37,
-      "userId": 38,
-      "date": "2020-12-31",
-      "isCompleted": true
-    },
-    {
-      "name": "Soccer class",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 4,
-      "id": 38,
-      "userId": 37,
-      "date": "2020-12-16",
-      "isCompleted": true
-    },
-    {
-      "name": "Fold your clothes",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 1,
-      "userId": 37,
-      "isCompleted": true,
-      "date": "2020-12-30",
-      "id": 39
-    },
-    {
       "name": "Swimming & ballet dance",
       "activityTypeId": 1,
       "timeLimit": "4",
@@ -205,26 +87,6 @@
       "userId": 40,
       "date": "2020-12-26",
       "isCompleted": true
-    },
-    {
-      "name": "Fold your clothes & make your bed",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 3,
-      "id": 41,
-      "userId": 42,
-      "date": "2020-12-26",
-      "isCompleted": true
-    },
-    {
-      "name": "Fold your clothes",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 3,
-      "userId": 43,
-      "isCompleted": false,
-      "date": "2021-01-06",
-      "id": 42
     },
     {
       "name": "Music class",
@@ -257,56 +119,6 @@
       "id": 54
     },
     {
-      "name": "Math and science111",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "id": 57,
-      "userId": 44,
-      "date": "2021-01-13",
-      "isCompleted": true
-    },
-    {
-      "name": "Swimming & ballet dance",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "id": 58,
-      "userId": 44,
-      "date": "2021-01-15",
-      "isCompleted": true
-    },
-    {
-      "name": "Clean up your playarea",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "userId": 45,
-      "isCompleted": true,
-      "date": "2021-01-16",
-      "id": 59
-    },
-    {
-      "name": "Soccer class",
-      "activityTypeId": 1,
-      "timeLimit": "3",
-      "rewardTypeId": 3,
-      "userId": 45,
-      "isCompleted": true,
-      "date": "2021-01-21",
-      "id": 60
-    },
-    {
-      "name": "Clean up your playarea",
-      "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 2,
-      "userId": 45,
-      "isCompleted": true,
-      "date": "2021-01-15",
-      "id": 61
-    },
-    {
       "name": "Swimming",
       "activityTypeId": 1,
       "timeLimit": "3",
@@ -317,13 +129,13 @@
       "id": 66
     },
     {
-      "name": "Tennis ",
-      "activityTypeId": 1,
-      "timeLimit": "4",
-      "rewardTypeId": 2,
-      "userId": 47,
-      "isCompleted": true,
-      "date": "2021-01-15",
+      "name": "Clean up your playarea",
+      "activityTypeId": 2,
+      "timeLimit": "2",
+      "rewardTypeId": 3,
+      "userId": 50,
+      "isCompleted": false,
+      "date": "2021-01-12",
       "id": 67
     }
   ],
