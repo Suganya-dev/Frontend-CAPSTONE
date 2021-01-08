@@ -1,166 +1,140 @@
 {
   "users": [
     {
-      "email": "jackrose@gmail.com",
-      "password": "jackrose",
-      "name": "David Mc donald",
-      "id": 1
+      "name": "Mike",
+      "email": "mike123@gmail.com",
+      "password": "1234",
+      "dob": "2020-08-18",
+      "parentId": 31,
+      "id": 35
     },
     {
-      "email": "liyamax0621@gmail.com",
-      "password": "liyamax",
-      "name": "Liya Max",
-      "id": 2
-    },
-    {
-      "email": "scott0621@gmail.com",
-      "password": "scott0621",
-      "name": "Scott silver",
-      "id": 4
-    },
-    {
-      "email": "jackemma@gmail.com",
-      "password": "jackemma",
-      "name": "jack Emma",
-      "id": 5
-    },
-    {
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "name": "Suganya Prakash",
-      "id": 8
-    },
-    {
-      "name": "Liya",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "dob": "2020-07-15",
-      "parentId": 8,
-      "id": 9
-    },
-    {
-      "name": "santhosh",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "dob": "2020-12-25",
-      "parentId": 8,
-      "id": 10
-    },
-    {
-      "name": "Tarunika",
-      "email": "suganprakash0621@gmail.com",
-      "password": "sugan0621",
-      "dob": "2020-12-19",
-      "parentId": 8,
-      "id": 13
+      "email": "kristen123@gmail.com",
+      "password": "1234",
+      "name": "Kristen steele",
+      "id": 41
     },
     {
       "name": "Dax",
-      "email": "dax111@gmail.com",
-      "password": "bhjgh",
-      "dob": "2020-10-07",
-      "parentId": 1,
-      "id": 22
+      "email": "dax123@gmail.com",
+      "password": "1234",
+      "dob": "2020-10-06",
+      "parentId": 41,
+      "id": 42
     },
     {
-      "name": "David",
+      "name": "Mike john",
+      "email": "mike123@gmail.com",
+      "password": "1234",
+      "dob": "2020-11-17",
+      "parentId": 1,
+      "id": 43
+    },
+    {
+      "email": "deepu123@gmail.com",
+      "password": "1234",
+      "name": "Deepika Surendar",
+      "id": 46
+    },
+    {
+      "name": "liya",
+      "email": "liya123@gmail.com",
+      "password": "12364",
+      "dob": "2020-10-14",
+      "parentId": 46,
+      "id": 47
+    },
+    {
+      "name": "Vaishu",
+      "email": "vaishu123@gmail.com",
+      "password": "1234",
+      "dob": "2021-01-13",
+      "parentId": 46,
+      "id": 48
+    },
+    {
       "email": "suganprakash0621@gmail.com",
-      "password": "Sara",
-      "dob": "2020-12-19",
-      "parentId": 1,
-      "id": 24
+      "password": "sugan0621",
+      "name": "Suganya Chandar",
+      "id": 49
     },
     {
-      "name": "Tarunika ",
-      "email": "suganprakash0621@gmail.com",
-      "password": "Manio",
-      "dob": "2020-12-16",
-      "parentId": 1,
-      "id": 28
-    },
-    {
-      "name": "Conifer",
-      "email": "conifer@123.com",
+      "name": "Divashini",
+      "email": "divashi123@gmail.com",
       "password": "1234",
-      "dob": "2020-12-03",
-      "parentId": 1,
-      "id": 30
+      "dob": "2020-04-16",
+      "parentId": 49,
+      "id": 50
     },
     {
-      "email": "peterpaul123@gmail.com",
+      "name": "Tarunika",
+      "email": "taru123@gmail.com",
       "password": "1234",
-      "name": "Peter paul",
-      "id": 31
-    },
-    {
-      "name": "jeff",
-      "email": "jeff123@gmail.com",
-      "password": "1234",
-      "dob": "2020-12-08",
-      "parentId": 31,
-      "id": 32
+      "dob": "2020-10-15",
+      "parentId": 49,
+      "id": 52
     }
   ],
   "activities": [
     {
-      "name": "Fold your clothes",
+      "name": "Music class",
       "activityTypeId": 1,
-      "timeLimit": "1",
-      "rewardTypeId": 1,
-      "userId": 28,
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "userId": 48,
       "isCompleted": false,
-      "date": "2020-12-25",
-      "id": 17
+      "date": "2021-01-15",
+      "id": 52
+    },
+    {
+      "name": "Tennis ",
+      "activityTypeId": 1,
+      "timeLimit": "4",
+      "rewardTypeId": 1,
+      "userId": 48,
+      "isCompleted": false,
+      "date": "2021-01-22",
+      "id": 53
     },
     {
       "name": "Clean up your playarea",
-      "activityTypeId": 1,
-      "timeLimit": "2",
-      "rewardTypeId": 3,
-      "userId": 30,
-      "isCompleted": true,
-      "date": "2020-12-25",
-      "id": 23
-    },
-    {
-      "name": "Math and science",
       "activityTypeId": 2,
-      "timeLimit": "3",
-      "rewardTypeId": 3,
-      "userId": 30,
-      "isCompleted": true,
-      "date": "2020-12-25",
-      "id": 25
+      "timeLimit": "4",
+      "rewardTypeId": 2,
+      "userId": 48,
+      "isCompleted": false,
+      "date": "2021-01-08",
+      "id": 54
     },
     {
       "name": "Swimming",
-      "activityTypeId": 2,
+      "activityTypeId": 1,
       "timeLimit": "3",
       "rewardTypeId": 2,
-      "userId": 30,
+      "userId": 47,
       "isCompleted": true,
-      "date": "2020-12-23",
-      "id": 26
+      "date": "2021-01-14",
+      "id": 66
     },
     {
-      "name": "Soccer class",
-      "activityTypeId": 2,
+      "name": "Tennis ",
+      "activityTypeId": 1,
       "timeLimit": "4",
-      "rewardTypeId": 3,
-      "id": 29,
-      "userId": 32,
-      "date": "2020-12-08",
-      "isCompleted": false
+      "rewardTypeId": 1,
+      "userId": 50,
+      "isCompleted": false,
+      "date": "2021-01-18",
+      "id": 68
     },
     {
-      "name": "Fold your clothes and sister clothes",
-      "activityTypeId": 2,
-      "timeLimit": "2",
+      "name": "Math and science",
+      "activityTypeId": 1,
+      "timeLimit": "3",
       "rewardTypeId": 1,
-      "id": 30,
-      "userId": 32,
-      "date": "2020-12-31",
-      "isCompleted": false
+      "id": 69,
+      "userId": 52,
+      "date": "2021-01-18",
+      "isCompleted": true
     }
   ],
   "activityTypes": [

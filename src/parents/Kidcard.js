@@ -27,9 +27,9 @@ export const Kidcard = (props) =>{
     <h3 className="kiduser__name">Child Name:{props.kiduser.name}</h3>
 
     <section className="button1">
-    <button  onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}>
+    <Button  variant="primary" size="sm" onClick={() => props.history.push(`/activities/create/${props.kiduser.id}`)}>
     Add Activity
-   </button> 
+   </Button> 
    </section>
 
    {/* for makking hyperlink,using Link */}
@@ -42,7 +42,7 @@ export const Kidcard = (props) =>{
         })
 }
 <section className="button1">
-<button className="btn--release"
+<Button variant="primary" size="sm"  className="btn--release"
         onClick={() => {
             // Code to delete animal from database
             releaseChild(props.kiduser.id)
@@ -50,7 +50,7 @@ export const Kidcard = (props) =>{
                 props.history.push("/")
             })
         }}
-        >Remove Child</button>
+        >Remove Child</Button>
         </section>
 </section>
 </>

@@ -4,15 +4,26 @@
     justify-content:  space-between;
     font-size:large;
     font-weight: bold;
-   
+    font-style: italic;
+    border: 2px solid rgb(75, 75, 252);
+    border-radius: 15px 15px;
+    margin: 2em;
+    padding: 3em;
+    background: rgb(252, 190, 216)
    }
 
 .navbar__item {
-    flex-basis: 20%;
+    flex-basis: 18%;
     list-style-type: none;
-    border: 3px solid dodgerblue;
+    margin: 2em;
+    padding: 1em;
+    border: 2px solid dodgerblue;
+    border-radius: 10px 10px;
+    font-style: italic;
 }
 
 a:hover, a:active {
-    background-color: rgb(213, 233, 39);
+    background-color: rgb(228, 155, 241);
   }
+
+  

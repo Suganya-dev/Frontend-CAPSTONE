@@ -1,11 +1,16 @@
 import React, { useContext, useRef, useEffect } from "react"
 import { ActivityContext } from "./Activitydataprovider"
+import {ActivityTypeContext} from "../ActivityType/ActivityTypeProvider"
+import {RewardTypeContext} from "../ActivityType/RewardTypeProvider"
 import "./Activity.css"
 import Button from 'react-bootstrap/Button'
 
 //   // Use the required context providers for data
 export const Activityform = (props) =>{
+
     const{addActivity,getActivity} = useContext(ActivityContext)
+    const{activityTypes,getActivityType} = useContext(ActivityTypeContext)
+    const{rewardTypes,getRewardPoints}=useContext(RewardTypeContext)
 
     const Name = useRef(null)
     const Type = useRef(null)
@@ -15,6 +20,8 @@ export const Activityform = (props) =>{
 
     useEffect(() =>{
         getActivity()
+        .then(getActivityType)
+        .then(getRewardPoints)
     },[])
 
     const ConstructNewActivity = () =>{
@@ -62,10 +69,13 @@ export const Activityform = (props) =>{
                         <div className="form-group">
                         <label htmlFor="type">Activity Type: </label>
                         <select defaultValue="" name="type" ref={Type} id="activityType" className="form-control" >
+
                         <option value="0">Select Activity Type</option>
-                        <option value="1">Chores</option>
-                        <option value="2">Classes</option>
-                        <option value="3">Special Events</option>
+                       {activityTypes.map(a=> (
+                           <option key={a.id} value={a.id}>
+                               {a.name}
+                           </option>
+                       ))}
                         </select>
                         </div>
                         </fieldset>
@@ -88,12 +98,14 @@ export const Activityform = (props) =>{
                 <fieldset>
                 <div className="form-group">
                 <label htmlFor="rewards">RewardPoints: </label>
-                <select defaultValue="" name="rewards" ref={Rewards} id="activitypoints" className="form-control" >
+                <select defaultValue="" name="rewards" ref={Rewards} id="activitypoints" className="form-control">
+
                 <option value="0">Reward Points</option>
-                <option value="1">25 pts</option>
-                <option value="2">50 pts</option>
-                <option value="3">75 pts</option>
-                <option value="4">100 pts</option>
+                {rewardTypes.map(r =>(
+                    <option key={r.id} value={r.id}>
+                        {r.points}
+                    </option>
+                ))}
                 </select>
                 </div>
                 </fieldset>
