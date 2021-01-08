@@ -7,17 +7,20 @@ I built this application in two weeks initially, using React Hooks and CSS for s
 My goals were to incorporate full CRUD functionality with many-to-many relationships, gain a deeper understanding of React Hooks, props, and state, while also incorporating an intuitive, functional user interface, without the use of bootstrapped components.
 
 ## Features:
--Parent Users can register an email and a password.
--The Parent User can login in to the app.
--Parents can register their kids.
--Parents can create chores for their Kids.
--Kids users can log into app(Kids dashboard).
--AfterKids users logging in, they can see the Main page with their    
+- Parent Users can register an email and a password.
+- The Parent User can login in to the app.
+- Parents can register their kids.
+- Parents can create chores for their Kids.
+- Kids users can log into app(Kids dashboard).
+- AfterKids users logging in, they can see the Main page with their    
 	Chores or classes  or events  
 
 ## Technologies Used:
 <img src="https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-javascript-programming-symbol-154897294.jpg" height="300px" width="400px"> </img>
-<img src="https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-javascript-programming-symbol-154897294.jpg" height="300px" width="400px"> </img>
+<img src="https://thumbs.dreamstime.com/b/https://secrethub.io/img/vs-code.svg" height="300px" width="400px"> </img>
+<img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" height="300px" width="400px"> </img>
+<img src="https://miro.medium.com/max/719/1*WaaXnUvhvrswhBJSw4YTuQ.png" height="300px" width="400px"> </img>
+
 
 Running this Application:
 First, a note about authentication...
@@ -26,13 +29,24 @@ This application uses mock authentication which is purely for demonstration purp
 
 Now that we've cleared that up...
 
-Clone this repository and change to the directory in the terminal.
+Make sure you have Node.js and npm installed
+
+1.git clone repository URL
+2.cd into the directory it creates
+3.touch api/database.json
+4.Delete the .ignore file in the api directory
+5.touch src/Settings.js
+6.In your database.json file, create the following empty arrays: { "users": [], "activities": [], "activityTypes":[], "rewardTypes":[]} (No External API is used)
+7.Serve JSON file utilizing json-server -w database.json -p 8088
+8.In a new tab in your terminal, cd into src, and serve
+9.Go to the localhost in your browser and register an account
 
 ## ERD:
 
 ![ERD](./src/ScreenshotERD.png)
 
-
+## LOGO:
+![Logo](./src/logo.svg)
 
 https://dbdiagram.io/d/5fa30dcc3a78976d7b7a8fb4
 
