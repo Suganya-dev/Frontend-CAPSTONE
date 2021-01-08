@@ -17,7 +17,7 @@ My goals were to incorporate full CRUD functionality with many-to-many relations
 
 ## Technologies Used:
 <img src="https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-javascript-programming-symbol-154897294.jpg" height="300px" width="400px"> </img>
-<img src="https://thumbs.dreamstime.com/b/https://secrethub.io/img/vs-code.svg" height="200px" width="300px"> </img>
+<!-- <img src="https://thumbs.dreamstime.com/b/https://secrethub.io/img/vs-code.svg" height="200px" width="300px"> </img> -->
 <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" height="200px" width="250px"> </img>
 <img src="https://secrethub.io/img/vs-code.svg" height="200px" width="300px"> </img>
 <img src="https://cdn.worldvectorlogo.com/logos/react.svg" height="200px" width="250px"> </img>
