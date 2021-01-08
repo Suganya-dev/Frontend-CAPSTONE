@@ -18,7 +18,7 @@ AfterKids users logging in, they can see the Main page with their
 Technologies Used:
 <img src="https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-javascript-programming-symbol-154897294.jpg" height="300px" width="400px"> </img>
 
-Runnng this Application:
+Running this Application:
 First, a note about authentication...
 
 This application uses mock authentication which is purely for demonstration purposes. Therefore the login and registration code written here is completely insecure and would never be implemented in a professional application.
@@ -28,6 +28,8 @@ Now that we've cleared that up...
 Clone this repository and change to the directory in the terminal.
 
 ERD:
+
+![ERD](./src/ScreenshotERD.png)
 
 
 
