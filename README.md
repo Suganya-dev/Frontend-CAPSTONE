@@ -31,9 +31,12 @@ Now that we've cleared that up...
 **Make sure you have Node.js and npm installed**
 
 1. git clone repository URL
-2. cd into the directory it creates
+    git@github.com:Suganya-dev/Frontend-CAPSTONE.git
+2. cd into the directory Frontend-capstone
 3. touch api/database.json
-4. Delete the .ignore file in the api directory
+4. Launch the Client.
+        npm install
+        npm start
 5. touch src/Settings.js
 6. In your database.json file, create the following empty arrays: { "users": [],  "activities": [], "activityTypes":[], "rewardTypes":[]} (No External API is used)
 7. Serve JSON file utilizing json-server -w database.json -p 8088
