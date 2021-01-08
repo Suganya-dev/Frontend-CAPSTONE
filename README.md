@@ -37,7 +37,7 @@ Make sure you have Node.js and npm installed
 3. touch api/database.json
 4. Delete the .ignore file in the api directory
 5. touch src/Settings.js
-6. In your database.json file, create the following empty arrays: { "users": [], "activities": [], "activityTypes":[], "rewardTypes":[]} (No External API is used)
+6. In your database.json file, create the following empty arrays: { "users": [],  "activities": [], "activityTypes":[], "rewardTypes":[]} (No External API is used)
 7. Serve JSON file utilizing json-server -w database.json -p 8088
 8. In a new tab in your terminal, cd into src, and serve
 9. Go to the localhost in your browser and register an account
@@ -47,7 +47,7 @@ Make sure you have Node.js and npm installed
 ![ERD](./src/ScreenshotERD.png)
 
 ## LOGO:
-![Logo](./src/logo.svg)
+![Logo](./src/logo/kidschorepad.png)
 
 https://dbdiagram.io/d/5fa30dcc3a78976d7b7a8fb4
 
