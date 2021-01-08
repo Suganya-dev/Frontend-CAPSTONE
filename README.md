@@ -1,6 +1,8 @@
 # Suganya-dev.github.io
 # Kids ChorePad
 
+**The Productivity app for Kids**
+
 ## Application Overview:
 I plan to build an application to encourage children to do the tasks by their own without the adult supervision.This App helps parents/adults to track their kids progress in their Academic,and helps to manage their kids time in a very productive way. The primary user of this App is children,and the secondary users will be Adults/parents. This App helps kids to manage,regularize their work by themself. It also motivates the kids to complete their daily tasks and get full rewards/stickers for that day,which can be noticed by parents as well. It minimises the work for parents towards their kids activities.
 I built this application in two weeks initially, using React Hooks and CSS for styling. 
@@ -8,12 +10,13 @@ My goals were to incorporate full CRUD functionality with many-to-many relations
 
 ## Features:
 - Parent Users can register an email and a password.
-- The Parent User can login in to the app.
+- The Parent User can login in to the app(Parents dashboard).
 - Parents can register their kids.
 - Parents can create chores for their Kids.
 - Kids users can log into app(Kids dashboard).
 - AfterKids users logging in, they can see the Main page with their    
 	Chores or classes  or events  
+- After kid Users completed their chores,they will receive a reward points.
 
 ## Technologies Used:
 <img src="https://thumbs.dreamstime.com/b/html-css-js-icon-set-web-development-logo-javascript-programming-symbol-154897294.jpg" height="300px" width="400px"> </img>
