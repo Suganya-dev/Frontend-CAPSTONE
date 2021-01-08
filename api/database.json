@@ -65,29 +65,17 @@
       "dob": "2020-04-16",
       "parentId": 49,
       "id": 50
+    },
+    {
+      "name": "Tarunika",
+      "email": "taru123@gmail.com",
+      "password": "1234",
+      "dob": "2020-10-15",
+      "parentId": 49,
+      "id": 52
     }
   ],
   "activities": [
-    {
-      "name": "Fold your clothes and sister clothes",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 1,
-      "id": 30,
-      "userId": 32,
-      "date": "2020-12-31",
-      "isCompleted": true
-    },
-    {
-      "name": "Swimming & ballet dance",
-      "activityTypeId": 1,
-      "timeLimit": "4",
-      "rewardTypeId": 2,
-      "id": 40,
-      "userId": 40,
-      "date": "2020-12-26",
-      "isCompleted": true
-    },
     {
       "name": "Music class",
       "activityTypeId": 1,
@@ -129,14 +117,24 @@
       "id": 66
     },
     {
-      "name": "Clean up your playarea",
-      "activityTypeId": 2,
-      "timeLimit": "2",
-      "rewardTypeId": 3,
+      "name": "Tennis ",
+      "activityTypeId": 1,
+      "timeLimit": "4",
+      "rewardTypeId": 1,
       "userId": 50,
       "isCompleted": false,
-      "date": "2021-01-12",
-      "id": 67
+      "date": "2021-01-18",
+      "id": 68
+    },
+    {
+      "name": "Math and science",
+      "activityTypeId": 1,
+      "timeLimit": "3",
+      "rewardTypeId": 1,
+      "id": 69,
+      "userId": 52,
+      "date": "2021-01-18",
+      "isCompleted": true
     }
   ],
   "activityTypes": [
